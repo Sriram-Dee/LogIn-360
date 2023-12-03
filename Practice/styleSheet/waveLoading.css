@@ -1,0 +1,47 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+
+.wave,.wave-reflect{
+    transform-style: preserve-3d;
+    transform: rotateY(25deg);
+}
+span{
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    animation: animate 1s ease infinite;
+    animation-delay: calc(.1s* var(--i)) ;
+    transform: perspective(500px)
+}
+.wave-reflect{
+    transform: rotateX(180deg) rotateY(-30deg);
+    position: relative;
+    opacity: 0.3;
+}
+.wave-reflect>span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( black,  transparent);
+}
+@keyframes animate {
+
+    0%,40%,100%{
+        transform: translateZ(5px) translateY(0px) scale(.5);
+    }
+    20%{
+        transform: translateZ(-10px) translateY(-20px) ;
+        scale: 1.3;
+    }
+}
