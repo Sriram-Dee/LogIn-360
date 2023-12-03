@@ -1,0 +1,87 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: black;
+
+    /* transition-property: ; */
+    /* height,width, background-color, border-radius */
+
+    /* transition-duration: ;*/
+    /* to specify the timing  */
+
+
+    /* transition-delay: ; */
+    /* to specify when it will start */
+
+    /* transition-timing-function: ;  */
+    /* ease(default), ease-in, ease-in-out,ease-out linear,cubic-bezier(s,s,s,s) */
+
+    /* transition: ; */
+    
+    /* short-hand
+    transition-property  transition-duration  delay   timing-function
+     */
+}
+
+.box:hover{
+    width: 200px;
+    background-color: red;
+}
+.circle{ 
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: red;
+    transition: .5s linear;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:#f1f1f1;
+    
+}
+
+.circle:hover{
+    border-radius: 150px;         
+    transform: perspective(150px) rotateZ(0deg) rotateY(30deg) ;
+    background-color: black;
+    transform-origin: left;
+}
+
+/* ------------------------------------------- Task ----------------------------------------------------------- */
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+ul li{
+    list-style: none;
+    margin-left: 10px;
+    border-radius: 3px;
+    border-bottom:2px solid transparent ;
+    transition: border-bottom, background-color, 1s ease;
+    cursor: pointer;
+    border-bottom:2px solid transparent;
+    background-color:transparent;
+    padding: 3px;
+}
+
+ul li:hover{
+    border-bottom:2px solid red;
+    background-color: rgb(205, 204, 204);
+    padding: 3px;
+}
