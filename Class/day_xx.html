@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<title>Flex-positioning</title>
+		
+		<style>
+		
+			body{
+			width:100vw;
+			height:500px;
+			display: flex;
+			align-items:center;
+			justify-content:center;
+			}
+			
+			.border{
+			width:150px;
+			height:150px;
+			background-color:white;
+			border: 10px black;
+			border-style:double;
+			border-radius: 150px 20px 150px 0px;
+			transform: rotate(45deg)  ;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			}
+			.sharigan{
+				width:80px;
+				height:80px;
+				border-radius:50%;
+				
+			}
+			img{
+				width:100%;
+				height:100%;
+				border-radius:50%;
+				object-fit:cover;
+				animation: rotate 1s linear infinite;
+			}
+			
+			@keyframes rotate{
+				0%{
+					transform: rotate(45deg)
+				}
+				25%{
+					transform: rotate(-50deg)
+				}
+				75%{
+					transform: rotate(260deg)
+				}
+				
+				100%{
+					transform: rotate(-90deg)
+				}
+			}
+		</style>
+	</head>
+	<body> 
+						<!-- Day-14   Date 09/10/23-->
+						
+		<!-- justify-content works on horizontal position 
+		there are few values for this property 
+		1.sart (align on left side starting point)
+		2.end (align on right side starting point)
+		3.center( horizontaly center )
+		4.space-between( Equle space-between the items)
+		5.space-around(Equle space-around the items)
+		
+		align-items works on vertical position 
+		
+		to centeralise the div we have to set both justify-content, align-items on center -->
+		
+		
+						<!-- Day-15  Date 10/10/23-->
+		
+			
+							<!-- CSS Border -->
+		
+		<div class="border">
+		<!--
+			*Border-width:
+				It represent the size of the border(Eg: border-width:2px;)
+			* Border-styles:
+			
+				Dotted, Dashed, Solid, Double, Groove, Ridge, Inset, Outset, None, hidden.
+				(Eg: border-style: double;)
+			
+			*Border-color:
+				It represent the color of the border(Eg: border-color:black;) 
+				
+			*Border-radius:
+				It represent the curvyness of the border's edge (Eg: border-radius: 25px;) We can also use the value in percentage.
+				
+				If we want currvyness on specific edge then we can mention it like "border-top-left-radius: 25px;"
+				
+				In short-hand method we can specify the currvyness of all edge in single line like " border-radius: 25px 0px 25px 0px;"			
+		-->	
+		
+			<div class="sharigan" >
+				<img src="Source/eye.png">
+			</div>
+		</div>
+	</body>
+</html>

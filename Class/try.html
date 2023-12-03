@@ -1,0 +1,70 @@
+<html>
+	<head>
+	<title>Grid try</title>
+	
+	<style>
+			body{
+				text-align: center;
+			}
+			#item-1{
+				background-color: tomato;
+			}
+			.item-2{
+				background-color: aqua !important;
+			}
+			.item{
+				background-color: blue ;
+				height: 100px;
+				aspect-ratio: 1;
+				margin: 10px;
+			}
+
+			.tooltip{
+				display: inline-block;
+				width: 150px;
+				border-bottom: 1px dotted black;
+				position: relative;
+				cursor: help;
+			}
+
+			.tooltip .tooltipText{
+				visibility: hidden;
+				width: 120px;
+				background-color: gray;
+				color: #f1f1f1;
+				border: 1px solid black;
+				position: absolute;
+				bottom: -30px;
+				left: 15px;
+			}
+
+			.tooltip:hover .tooltipText{
+				visibility: visible;
+			}
+
+			img{
+				height: 200px;
+				aspect-ratio: 1/.5;
+				border: 2px solid gray;
+				object-fit:contain;
+			}
+	</style>
+	</head>
+	<body>
+	   <!-- !important keyword -->
+	   <div class="container" >
+			<div class="item item-1" id="item-1">1</div>
+			<div class="item item-2" >2</div>
+			<div class="item item-3">3</div>
+
+		<!-- Tooltip -->
+			<div class="tooltip">Hover over me
+				<span class="tooltipText">Tooltip text</span>
+			</div>
+			<div class="img">
+				<img src="../Tasks/Source/itachi.jpeg" />
+			</div>
+	   </div>
+	
+	</body>
+</html>

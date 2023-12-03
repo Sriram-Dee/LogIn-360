@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            display: grid;
+            place-items: center;
+            background: url(Source/task-7/background.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            backdrop-filter: blur(8px);
+        }
+        h1{
+            text-align: center;
+            margin: 20px 0px;
+            background-color: rgba(110, 110, 110, 0.76);
+            padding: 20px;
+            color: gold;
+        }
+        .main{
+           display: flex;
+           justify-content: center;
+           gap: 10px;
+           width: 100vw;
+           flex-wrap: wrap;
+           padding: 30px 20px 50px 30px;
+        }
+		
+        .card{
+            width: 23%;
+            min-width: 220px;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 3px 30px 3px 30px;
+            border: 1px solid aliceblue;
+            margin-bottom: 30px;
+            transition: all .3s ease;
+        }
+
+        .card:hover{
+            scale:1.15;
+            z-index: 99;
+            box-shadow: rgb(248, 248, 248) 0px 20px 30px -10px;
+            border: 1px solid black;
+        }
+        .card-body{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(240, 248, 255, 0.733);
+            justify-content: space-between;
+            padding: 2px 15px 20px 15px;
+            top: 220px;
+            height: 100%;
+            width: 100%;
+            transition: all .3s ease-out; 
+        }
+        .card-body:hover{
+            top: 0;
+            background: rgba(255, 255, 255, 0.363);
+            backdrop-filter: blur(3px) ;
+            padding-top: 20px;
+        }
+        .img-box{
+            width: 100%;
+            height: 100%;
+            
+        }
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;  
+        }
+        h2{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .card-bottom{
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            background-color: gold;
+            border: none;
+            padding: 5px;
+            font-size: 11px;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        button:hover{
+            background-color: goldenrod;
+            border: 1px solid;
+        }
+        span,p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PAZHAMUDHIR SOLAI</h1>
+        <div class="main">
+       
+            <div class="card">
+                <div class="img-box">
+                    <img src="Source/task-7/apple.jpg" alt="apple">
+                </div>
+                <div class="card-body">
+                    <h2>Apple</h2>
+                    <p>Apple can sit amet consectetur adipisicing elit. Aut, tenetur amet voluptatibus enim maiores laborum eveniet inventore. Excepturi, reprehenderit officiis.</p>
+                    <div class="card-bottom">
+                        <span>1KG = $ 250</span>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="Source/task-7/bananas.jpg" alt="banana">
+                </div>
+                <div class="card-body">
+                    <h2>Banana</h2>
+                    <p>Banana will consectetur, adipisicing elit. Dolor provident accusantium fugit fuga! Nam odit quas voluptates nobis, quae iste? Harum nemo exercitationem distinctio quae!</p>
+                    <div class="card-bottom">
+                        <span>1KG = $80</span>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="Source/task-7/orange.jpg" alt="orange">
+                </div>
+                <div class="card-body">
+                    <h2>Orange</h2>
+                    <p>Orange may consectetur adipisicing elit. Sed soluta ratione libero architecto culpa beatae repudiandae veniam at. Nisi sed perferendis sunt fuga, laudantium repudiandae recusandae sequi minus saepe ipsum?</p>
+                    <div class="card-bottom">
+                        <span>1KG = $220</span>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="Source/task-7/pineapple.jpg" alt="pineapple">
+                </div>
+                <div class="card-body">
+                    <h2>Pineapple</h2>
+                    <p>Pineapple inventore laboriosam molestiae, iusto eaque ex totam reprehenderit maxime laborum repellat necessitatibus! Officiis ex quo voluptatem accusantium quisquam enim quod doloremque.</p>
+                    <div class="card-bottom">
+                        <span>1KG = $160</span>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="Source/task-7/grapes.jpg" alt="grapes">
+                </div>
+                <div class="card-body">
+                    <h2>Grapes</h2>
+                    <p>Grapes are adipisicing elit. Quibusdam eos eveniet exercitationem? Cupiditate, nulla eius libero iure molestiae quia quod vitae fugit nobis ea dolores deserunt optio asperiores!</p>
+                    <div class="card-bottom">
+                        <span>1KG = $150</span>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="Source/task-7/kiwi.jpg" alt="kiwi">
+                </div>
+                <div class="card-body">
+                    <h2>Kiwi</h2>
+                    <p>Kiwi will met consectetur adipisicing elit. Rerum, odit reprehenderit. Nam nulla molestias repudiandae totam incidunt harum cumque a commodi excepturi sit. Hic, provident.</p>
+                    <div class="card-bottom">
+                        <span>1KG = $180</span>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="Source/task-7/strawberries.jpg" alt="strawberries">
+                </div>
+                <div class="card-body">
+                    <h2>Strawberries</h2>
+                    <p>Strawberries are consectetur adipisicing elit. Quidem necessitatibus, debitis consequatur alias quae excepturi officia doloremque sapiente odit amet in commodi quisquam neque quis. Voluptatibus et dignissimos debitis reprehenderit.</p>
+                    <div class="card-bottom">
+                        <span>1KG = $200</span>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img-box">
+                    <img src="Source/task-7/pomegranate.jpg" alt="pomegranate">
+                </div>
+                <div class="card-body">
+                    <h2>Pomegranate</h2>
+                    <p>Pomegranate provident dolor, sit amet consectetur adipisicing elit aperiam quibusdam ab aspernatur accusamus vel earum labore non molestiae nesciunt iure voluptas autem, quaerat consequuntur facere obcaecati veritatis.</p>
+                    <div class="card-bottom">
+                        <span>1KG = $250</span>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

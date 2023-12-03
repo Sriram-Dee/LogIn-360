@@ -1,0 +1,135 @@
+
+	3em = 3 times of normal font <!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+	  Launch
+	</button>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+		<div class="modal-dialog modal-sm modal-fullscreen" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalTitleId">Modal title</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	
+				</div>
+				<div class="modal-body">
+					Body
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+									
+									
+									TRANSITION
+ 
+ 
+ transition-property: ; 
+ 
+			Specifies the name of the CSS property the transition effect is for
+        ( height,width, background-color, border-radius ... ect )
+		
+
+ transition-duration: ;
+            Specifies how many seconds or milliseconds a transition effect takes to complete 
+
+
+ transition-delay: ; 
+			Specifies a delay (in seconds) for the transition effect 
+			
+
+ transition-timing-function: ; 
+			Specifies the speed curve of the transition effect
+            ease(default), 
+			ease-in, 
+			ease-in-out,
+			ease-out 
+			linear,
+			cubic-bezier(s,s,s,s) 
+			
+
+ transition: ; 
+	 A shorthand property for setting the four transition properties into a single property
+            (transition-property  transition-duration  delay   timing-function)
+			
+---------------------------------X---------------X------------------X--------------------------			
+									ANIMATION
+
+
+	1	animation-name:; (our preferance)
+				Specifies the name of the keyframe you want to bind
+				
+	2	animation-duration:;  ( in seconds or milliseconds 10s or 3000ms )
+				Specifies how many seconds or milliseconds an animation takes to complete
+				
+				
+	3	animation-timing-function:; (linear,ease,ease-in,ease-out,ease-in-out,cubic-bezier(n,n,n,n))
+				Specifies the speed curve of the animation
+		
+	4	animation-delay:; ( in seconds or milliseconds 3s or 3000ms )
+				Specifies a delay before the animation will start
+				
+	5	animation-iteration-count:; (number,infinite)
+				Specifies how many times an animation should be played
+				
+	6	animation-direction: ; (normal, reverse, alternate, alternate-reverse)
+				Specifies whether or not the animation should play in reverse on alternate cycles
+				
+				normal	(Default value)
+					The animation is played as normal (forwards)
+					
+				reverse	
+					The animation is played in reverse direction (backwards)
+					
+				alternate	
+					The animation is played forwards first, then backwards	
+				
+				alternate-reverse
+					The animation is played backwards first, then forwards
+					
+	7    animation: ;(name duration timing-function delay iteration-count direction)
+					Short-hand
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
+					
+					
+					
+					
+					
+					
+					

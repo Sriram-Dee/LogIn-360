@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-9</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, rgb(156, 232, 168), rgb(249, 168, 238),rgb(146, 246, 246) );
+
+        }
+       .container{
+        height: 303px;
+        width: 300px;
+        display: flex;
+        background-color: #2b2b2b;
+        color: #ffffff;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;       }
+       
+       .left-box{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        }
+
+        .right-box{
+            width: 100px;
+        }
+
+        .img-holder{
+            width: 100px;
+            height: 100px;
+            align-self: center;
+            border-radius: 50%;
+            background: linear-gradient(to bottom right, rgb(0, 255, 38), rgb(250, 0, 217),rgb(0, 255, 255) );
+            padding: 2px;
+            border: none;
+            transition: .5s ease;
+            animation: colorChange 9s linear infinite;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+            border-radius: 50%;
+           }
+
+           .name{
+            margin-top: -20px;
+            border: none;
+           }
+           button{
+            width: 130px;
+            height: 25px;
+            align-self: center;
+            background: linear-gradient(to bottom right,  rgb(0, 255, 38), rgb(128, 110, 125),rgb(0, 255, 255));
+            border: 2px solid #f7f1e3;
+            color: #ffffff;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 1px;
+            transition: .5s ease;
+            animation: colorChange 7s linear infinite;
+           }
+
+           button:hover,
+           .img-holder:hover{
+            scale: 1.035;
+            transition: .5s ease;
+           }
+           .right-box{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+           }
+           .mini-box{
+            height: 100px;
+            width: 100px;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #2c2c54;
+            transition: .5s ease;
+           }
+
+           .mini-box:hover{
+            font-size: 12.8px;
+           }
+
+           @keyframes colorChange{
+            0%{ filter: hue-rotate(0deg); }
+            100%{ filter: hue-rotate(720deg);}
+           }
+    </style>
+</head>
+    <body>
+        <div class="container">
+            <div class="left-box">
+                <div class="img-holder">
+                    <img src="Source/pain.jpg" alt="Profile">
+                </div>
+                <div class="name">
+                    <h2>Devil</h2>
+                    <h4>UI Designer</h4>
+                </div>
+                <button>Follow</button>
+                <button>Message</button>
+            </div>
+            <div class="right-box">
+                <div class="mini-box">
+                    <h2>143</h2>
+                    <span>Post</span>
+                </div>
+                <div class="mini-box">
+                    <h2>2.5k</h2>
+                    <span>Likes</span>
+                </div>
+                <div class="mini-box">
+                    <h2>6k</h2>
+                    <span>Followers</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

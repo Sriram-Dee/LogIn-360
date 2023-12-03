@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow and Icon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            color: #f1f1f1;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to right, rgba(11, 11, 11, 0.712), rgba(19, 19, 19, 0.8)), url(Source/consulting.jpg);
+            background-size: cover;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            backdrop-filter: blur(5px);
+        }
+        h1~p{
+            width: 500px;
+            text-align: center;
+        }
+        .box-wrap~p{
+            letter-spacing: 2px;
+        }
+        .box-wrap{
+            display:flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 650px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: first baseline;
+            border: 2px solid #f1f1f1;
+            border-radius: 20px;
+            gap: 15px;
+            box-shadow: 3px 5px 2px 1px #f1f1f19b;
+            backdrop-filter: blur(5px);
+        }
+
+        i{
+            margin-top: 30px;
+            font-size: 32px;
+            color: gold;
+        }
+        button{
+            background-color: gold;
+            border-radius: 20px;
+            border: none;
+            padding: 7px;
+            color: navy;
+            letter-spacing: 1px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Models</h1>
+        <p>
+           We offers flexible engagement models that conform to diverse custom development requirements,
+augmenting your team capabilities and allowing you to focus on your core competencies.
+        </p>
+        <div class="box-wrap">
+            <div class="box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Development</h3>
+                <p> It is ipsum dolor sit amet consectetur, adipisicing elit debitis.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-people-group"></i>
+                <h3>Team Management</h3>
+                <p> Sit amet consectetur, adipisicing elit. Modi facilis suscipit, culpa aut assumenda iure!</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-certificate"></i>
+                <h3>Quality Contorl</h3>
+                <p>Dolor sit amet consectetur adipisicing elit. Alias ab expedita accusantium est assumenda et ducimus nostrum eligendi?</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <h3>Risk Management</h3>
+                <p>Amet consectetur adipisicing elit. Sint natus sapiente deleniti, in repudiandae labore illo rerum enim.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-bug"></i>
+                <h3>Bug fixing</h3>
+                <p>We will track ipsum dolor sit amet consectetur adipisicing elit. Est excepturi iusto magni debitis rerum dolor esse.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-check-to-slot"></i>
+                <h3>Testing Metrics</h3>
+                <p>Testing is epsum dolor sit, amet consectetur adipisicing elit. Omnis expedita labore voluptatibus repellat, molestias non beatae!</p>
+            </div>
+        </div>
+        <p>You have a Challenge? We have the  Solution! Let's Talk!</p>
+        <button>Schedule a consultation</button>
+    </div>
+</body>
+</html>

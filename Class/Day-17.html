@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .main{
+            display: grid;
+            grid-template-rows: 100px 100px 100px 100px 100px 100px;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px; /* we can write this repeated 100px like =  repeat(6, 100px) */
+            border: 2px solid black;
+             /*grid-auto-flow: column; to bring the new added items on right(default= row(bottom)) */
+            gap: 5px; 
+        }
+
+        .item{
+            border: 5px solid red;
+            background-color: yellowgreen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item-1{
+             grid-row: 1/3; 
+             grid-column: 1/7; 
+            /* we can also written like
+            grid-row: span 2;
+            grid-column: span 6; */
+        }
+        .item-2{
+            /* grid-row: span 2;
+            grid-column: span 2; */
+            grid-area: 2/6/4/4;
+            z-index: 1;
+        }
+
+        .item-3{
+            grid-area: 3/1/-1/-1; /* Row-start/ column-start/Row-end/column-end*/
+        }
+
+        /* .item-4{
+            grid-area: 2/4//5;
+        
+        } */
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <!--<div class="item item-3">3</div>
+        <div class="item item-3">4</div>
+        <div class="item item-3">5</div>
+        <div class="item item-3">6</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mock-Interview</title>
+		<link rel="Stye sheet" href="style.css" />
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			.container{
+				width: 100%;
+				min-height: 100vh;
+				background: linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.197)), url(Source/keyboard.jpg) ;
+				background-size: cover;
+				background-position: center;
+				color: #f1f1f1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+
+			.card{
+				background: rgba( 225, 225, 225, 0.6);
+				width: 640px;
+				height: 400px;
+				margin-top: 40px;
+				padding: 20px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.left{
+				display: flex;
+				flex-direction: column;
+				width: 250px;
+				height: 300px;
+				justify-content: space-between;
+			}
+
+			.left input{
+
+				margin:10px 0;
+				height: 35px;
+				padding: 5px;
+				border-radius: 10px;
+			}
+
+			.right{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 250px;
+				height: 260px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.right h2 {
+				margin-left: 20px;
+				width: 150px;
+				text-align: center;
+				line-height: 35px;
+			}
+			.sub{
+				width: 150px;
+				background-color: red;
+				color: #f1f1f1;
+				font-size: 16px;
+
+			}
+			.right button{
+				height: 30px;
+				width: 220px;
+				
+			}
+
+			.or{
+
+				background-color: #f1f1f1;
+				border-radius: 50%;
+				padding: 10px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="container">
+
+			<h1>LOGIN to our website</h1>
+			<p  style="margin-top:20px ;">Use the form below to login to our website if you have an account</p>
+			<div class="card">
+
+				<div class="left">
+					<h2 style="color: black;">Sign up</h2>
+					<input type="text" placeholder="UserName">
+					<input type="Email" placeholder="Email">
+					<input type="password" placeholder="Password">
+					<input type="password" placeholder="Confirm Password">
+					<input type="submit" class="sub">
+				</div>
+				<div class="or" style="color: black; font-size: 18px;">OR</div>
+				<div class="right">
+					<h2 style="color: black;">Contact With Social Network</h2>
+					<button style="background-color: rgb(0, 110, 255); color: #f1f1f1;">Log in with facebook</button>
+					<button style="background-color: #03c8ff; color: #f1f1f1;">Log in with tiwtter</button>
+					<button style="background-color: orangered; color: #f1f1f1;">Log in with Google</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

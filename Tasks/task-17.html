@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Task-17</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+			.container{
+			 width:100%;
+			 min-height:100vh;
+			 display:flex;
+			 justify-content:center;
+			 align-items:center ;
+			 background-color: red;
+			}
+
+			.card{
+				width:300px;
+				height:420px;
+				background-color:#f4f4f2;
+				border-radius: 15px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 30px 10px 20px 10px;
+				perspective: 800px;
+				box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+			}
+
+			nav{
+
+				border:1px solid black;
+				padding:2px 5px;
+				border-radius: 30px;
+				margin-bottom:30px;
+			}
+
+			button{
+					border:none;
+					font-size:16px;
+					padding:5px 10px;
+					border-radius:30px;
+			}
+			button:nth-child(2){
+				height:30px;
+				background-color:red;
+				color: #f1f1f1;
+
+			}
+			nav+p span{
+				font-size: 34px;
+			}
+
+
+			.bottom div i{
+				color:red;
+				font-size:20px;
+			}
+
+			.bottom div {
+			font-size:14px;
+				line-height:28px;
+			}
+
+			.bottom+button{
+				background-color:#111;
+				color:#f1f1f1;
+				border-radius: 40px;
+				padding: 5px 20px;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container" >
+			<div class="card">
+				<nav>
+					<button>3 Months</button>
+					<button>6 Months</button>
+					<button>Annual</button>
+				</nav>
+					<p><sup><i class="fa-solid fa-indian-rupee-sign"></i></sup><b><span>699</span>/mon</b></p>
+					<h3 style="margin:20px;">Only for 5G users</h3>
+					<hr>
+				<div class="bottom" style="border-top:1px solid black; width: 100%; padding:20px 30px 20px 26%;">
+					<div> <i class="fa-solid fa-phone"></i> &nbsp Unlimited calls</div>
+					<div> <i class="fa-solid fa-arrow-right-arrow-left"></i> &nbsp Unlimited 5G data</div>
+					<div> <i class="fa-regular fa-envelope"></i> &nbsp 250 SMS per day</div>
+					<div> <i class="fa-solid fa-headphones-simple"></i> &nbsp Enjoy Wynk Music</div>
+					<div> <i class="fa-solid fa-music"></i> &nbsp Free Hellotunes</div>
+				</div>
+				<button> Recharge Now</button>
+			</div>
+	   </div>
+	</body>
+</html>

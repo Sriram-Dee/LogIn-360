@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Not hover opacity</title>
+
+    <style>
+        /* ----------------NOT HOVER--------------------------- */
+
+        body{
+            width: 100%;
+            height:100vh ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            background: linear-gradient(transparent, rgb(104, 104, 104)), url(../Tasks/Source/audi-bg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        img{
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+            background-color: black;
+            object-fit: cover;
+            line-height: 100px;
+            transition: opacity 0.5s ease;
+            margin: 10px;
+        }
+        img:nth-child(1){
+            background-color: aqua;
+        }
+        img:nth-child(2){
+            background-color: aquamarine;
+        }
+        img:nth-child(3){
+            background-color: bisque;
+        }
+        img:nth-child(4){
+            background-color: cadetblue;
+        }
+        img:nth-child(5){
+            background-color: chartreuse;
+        }
+        img{
+            display: inline-block;
+        }
+        .container:hover > :not(:hover){
+            opacity: 0.4;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- ------NOT HOVER------------------------------------ -->
+
+    
+    <div class="container" >
+        <img src="../Tasks/Source/itachi.jpeg" alt="">
+        <img src="../Tasks/Source/audi-top.jpg" alt="">
+        <img src="../Tasks/Source/Audi.jpg" alt="">
+        <img src="../Tasks/Source/audi1.png" alt="">
+        <img src="../Tasks/Source/audi2.jpeg" alt="">
+    </div> 
+
+
+
+</body>
+</html>

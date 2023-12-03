@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Form</title>
+
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap');
+*   {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    }
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top right, #5387ee, #f5abef );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+}
+.card{
+    height:450px ;
+    width: 420px;
+    background-color: #fff;
+    border-radius: 10PX;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    padding: 35px;
+    /* border-right: 20px  solid#4286F4; */
+    }
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #5387ee;
+    text-decoration: underline;
+}
+
+.form-group label, input{
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400 ;
+    letter-spacing: 1px;
+    color: #605f5f;
+    margin-bottom: 5px;
+    outline: none;
+}
+.form-group input{border: none;
+    border-radius: 3px;
+    background-color:#E5E5E5 ;
+    padding: 10px;
+    height: 30px;
+    width: 330px;
+    font-size: 11px;
+    
+}
+.more{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.more>label,input {
+   display: flex;
+    text-transform: capitalize;
+    font-size: 10px;
+    font-weight: 200 ;
+    letter-spacing: 1px;
+    color: #5e5e5e;   
+    margin-left: 5px;
+    align-items: center;
+    line-height: 30px;
+    
+}
+input.reme{
+    margin: 5px ;
+    height: 9px;
+    width: 9px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #84a5ec;
+    margin-right: 30px;
+}
+button{
+    background: #5387ee;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 11px ;
+    height: 30px;
+    width: 330px;
+    border-radius:3px;
+    margin-top: 10px;
+    font-weight: 510;
+    letter-spacing: 1px;
+}
+button:focus{
+    transform: scale(1.009);
+    background-color: transparent;
+    border: .05px #4286F4 solid;
+    color: #4286F4;
+}
+ </style>   
+</head>
+<body>
+        <div class="card">
+        
+            <h1 class="head" title="Inga onnum illa"> Signup </h1>
+        
+            <div class="form-group">
+                <label for="un">First name</label>
+                <input type="text" id="un" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="ln">Last name</label>
+                <input type="text" id="ln" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pw">password</label>
+                <input type="password" id="pw" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="cpw"> Confirm password</label>
+                <input type="password" id="cpw" required>
+            </div>
+
+            <div class="more">
+        
+                <label for="reme"> <input type="checkbox" class="reme">Accept terms & conditions.</label>
+                <a href="redbus.html">Login</a>
+            </div>
+        
+            <button> Creat account</button>
+        </div>
+    </body>
+    
+    </html>

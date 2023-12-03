@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.container{
+				prespective: 900px;
+				
+			}
+			.box{
+				height: 150px;
+				aspect-ratio: 1/1;
+				background-color: lightblue;
+				animation: anime 6s infinite linear alternate;
+				position: relative;
+				transform-style: preserve-3d;
+			}
+			 
+			.box:after{
+			 content: '';
+			 position: absolute;
+			 height:20px;
+			 width:100%;
+			 top: 110%;
+			 background: radial-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5), transparent);
+			 opacity: 0.5;
+			 border-radius:50%;
+			}
+
+			.box h1{
+				line-height: 150px;
+				transform: perspective(800px) translateZ(20px);
+			}
+			
+			@keyframes anime{
+				10%{
+				  background-color: lightgreen;
+				  transform: translateX(100px) skew(25deg);
+				  border-radius: 10%;
+				}
+				
+				25%{
+				  background-color: yellow;
+				  transform: translateX(300px)translateY(10%) skew(10deg) ;
+				  
+				}
+				
+				50%{
+				  background-color: lightgrey;
+				  transform: translateX(500px)translateY(250%) skew(30deg) rotateY( 180deg);
+				  
+				}
+				
+				75%{
+				  background-color: lightgreen;
+				  transform: translateX(700px) translateY(40%) skew(45deg) ;
+				  
+				}
+				
+				100%{
+				  background-color: grey;
+				  transform: translateX(900px) translateY(60%) skew(0deg) rotateY(-270deg);
+				  border-radius: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+	<div class="container">
+		<div class="box">
+			
+				<h1>Animation</h1>
+			
+		</div>
+	</div>
+	</body>
+</html>

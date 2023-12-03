@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-RedBus</title>
+    <link rel="shortcut icon" href="redbus/redbus-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Landing_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <nav>
+                <div class="logo" title="RedBus" > 
+                    <img src="redbus/redbus-logo.svg" alt="Logo">
+                </div>
+                <span>Airport Transfer</span>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li>
+                        <select name="lan" id="lan">
+                            <option value="" selected style="display: none;">Language</option>
+                            <option value="eng">English</option>
+                            <option value="es">Espanol</option>
+                            <option value="jp">Japanees</option>
+                            <option value="tk">Turkish</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select name="cur" id="currancy">
+                            <option value="inr" selected>INR</option>
+                            <option value="usd">USD</option>
+                            <option value="eur">EUR</option>
+                            <option value="vnd">VND</option>
+                            <option value="BGN">BGN</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select name="manage" id="manage">
+                            <option value="" selected style="display: none;">Manage Booking</option>
+                            <option value="cancel">Cancel</option>
+                            <option value="eur">Show my tickets</option>
+                            <option value="vnd"><a href="mailto:redbus@gamail.com">Email</a></option>
+                        </select>
+                    </li>
+                    <li><a href="LoginPage.html" target="_blank">Login</a></li>
+                </ul>
+                <!-- <div class="icons">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-regular fa-user"></i></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                </div> -->
+            </nav>
+             <div class="content">
+                <h1> Book your journey now with the world's largest bus platform</h1>
+                <div class="choose">
+                    <label for="from"> <p>SOURCE</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" name="" id="from" placeholder='Ex: Chennai'>
+                    </label>
+                    <i class="fa-solid fa-arrow-right-arrow-left" style="line-height: 80px;"></i>
+                    <label for="destination"><p>DESTINATION</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" name="" id="destination" placeholder="Ex: Trichy">
+                    </label>
+                    <label for="sDate"><p>DATE</p>
+                        <input type="date" name="" id="sDate"  placeholder="DD/MY" ><!--onfocus="(this.type='date')"-->
+                    </label>
+                    <label for="rDate"><p>RETURN DATE</p>
+                        <input type="date" name="" id="rDate" placeholder="Optional">
+                    </label>
+                    <button class="search">Search</button>
+                </div>
+            </div>
+
+
+
+            <div class="plus">
+                <div class="card">
+                    <img src="redbus/36million.svg" alt="">
+                    <h2>36 Million</h2>
+                    <p>happy customers globally</p>
+                </div>
+                <div class="card">
+                    <img src="redbus/3500worldwide.svg" alt="">
+                    <h2>36 Million</h2>
+                    <p>happy customers globally</p>
+                </div>
+                <div class="card">
+                    <img src="redbus/booked.svg" alt="">
+                    <h2>36 Million</h2>
+                    <p>happy customers globally</p>
+                </div>
+            </div>
+
+
+
+            <div class="airportTransfer">
+                <img src="redbus/AirportHome.svg" alt="">
+                <div class="airDetail">
+                    <h3>INTRODUCING</h3>
+                    <h2>AIRPORT TRANSFERS</h2>
+                    <p>You can travel low cost airport shuttles, trains & bus to and from your accomdation</p>
+                </div>
+                <button>BOOK NOW</button>
+            </div>
+
+
+            <div class="ads">
+                <div class="card">
+                    <img src="redbus/adv1.svg" alt="">
+                    <div class="adDetails">
+                        <h2>Worldwide coverage</h2>
+                        <p>Find affordable travel tickets across the world, all at one place</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="redbus/Anxiety-free travel.svg" alt="">
+                    <div class="adDetails">
+                        <h2>Worldwide coverage</h2>
+                        <p>Find affordable travel tickets across the world, all at one place</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="redbus/No hidden charges@3x 1.svg" alt="">
+                    <div class="adDetails" >
+                        <h2>Worldwide coverage</h2>
+                        <p>Find affordable travel tickets across the world, all at one place</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="routes" style="text-align: center;">
+                <span style="font-size: 3em; font-weight: 900;">Top Travelled Bus Routes</span>
+                <div class="routeCards">
+                    <div class="card">
+                        <div class="img">
+                            <img src="redbus/londonjpg.jpg" alt="">
+                        </div>
+                        <p>Buses from</p>
+                        <h2>London to Oxford</h2>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="redbus/berlin.jpg" alt="">
+                        </div>
+                        <p>Buses from</p>
+                        <h2>Beriln to Prague</h2>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="redbus/rome.jpeg" alt="">
+                        </div>
+                        <p>Buses from</p>
+                        <h2>Vienna to Bratislava</h2>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="redbus/dubai.jpg" alt="">
+                        </div>
+                        <p>Buses from</p>
+                        <h2>Dubai to Somewere</h2>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="redbus/paris.jpg" alt="">
+                        </div>
+                        <p>Buses from</p>
+                        <h2>Paris to Somewere</h2>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="redbus/tajmaha.jpg" alt="">
+                        </div>
+                        <p>Buses from</p>
+                        <h2>Delhi to Somewere</h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="travel" style="text-align: center;" >
+                <img src="redbus/weare.jpg" alt="" style="margin-top: 40px;" width="100%">
+                <h1 style="margin-top: 20px; ">We are about bus travel</h1>
+                <p style="margin-top: 20px; width: 80%; display: inline-block; line-height: 20px;">redBus is the best platform in the world for booking bus tickets online. redBus is serving 6 countries around the world (India, Malaysia, Singapore, Indonesia, Peru, and Colombia), and would be launching bus ticket booking services in more countries. Trusted by over 18 million customers worldwide, redBus offers an easy, fast, and secure platform for booking cheap bus tickets. You only need to select your origin, destination, and date of departure, and you will find plenty of buses to travel by within a few seconds. You can book bus based on your preferred schedule, choose a pick-up and dropping point, preferred bus type, and book a bus ticket online with just a few clicks!</p>
+                <P style="margin-top: 20px; width: 80%; display: inline-block; line-height: 20px;">redBus operates on over 7000 routes and has on-boarded over 2,300 bus operators globally. In addition to bus tickets booking for popular tourist destinations, one can also book cheap bus tickets to the remote and less popular places in India, Malaysia, Singapore, Indonesia, Peru, and Colombia through redBus. redBus has sold over 180 million tickets globally through its website and mobile app, ensuring hassle-free and memorable experience for booking bus tickets online.</P>
+            </div>
+
+            <div class="bottom">
+                <div class="left">
+                    <img src="redbus/redbus-logo.svg" alt="">
+                    <p>redBus is the world's largest online bus ticket booking service trusted by over 25 million happy customers globally. redBus offers bus ticket booking through its website,iOS and Android mobile apps for all major routes.</p>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <ul class="abtRedBus" id="abtRedBus">
+                    <li><h3>About Red Bus</h3></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Mobile version</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><h3>Info</h3></a></li>
+                    <li><a href="#">T&C</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Cookie policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><h3>Global sites</h3></a></li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">Singapore</a></li>
+                    <li><a href="#">Malasiya</a></li>
+                    <li><a href="#">Indonesia</a></li>
+                    <li><a href="#">Peru</a></li>
+                    <li><a href="#">Colombia</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><h3>Our partners</h3></a></li>
+                    <li><a href="#"> Goibibo Bus</a></li>
+                    <li><a href="#">Goibibo Hotels</a></li>
+                    <li><a href="#">Makemytrip Bus</a></li>
+                    <li><a href="#">Makemytrip Hotels</a></li>
+                </ul>
+            </div >
+            <center><p >2021 ibibogroup All rights reserved</p></center>
+        </div>
+
+    </div>
+</body>
+</html>

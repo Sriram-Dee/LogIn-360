@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+        <title>College application form</title>
+        <link rel="stylesheet" href="CSS/style-4.css">
+        <!-- <style>
+            *{
+                box-sizing: border-box;
+            }
+            .container{
+                background-color: aqua;
+                width: 100vw;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .wrapper{
+                width: 700px;
+                padding: 10px;
+                border-radius: 10px;
+                background: #f1f1f1 ;
+            }
+            .margin{
+                border: 2px solid;
+                border-radius: 2px;
+                padding: 15px;
+                height: 1000px;
+                background-image: linear-gradient(rgba(255, 255, 255, 0.914),rgba(255, 255, 255, 0.914)), url(Source/logo.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size:  contain;
+            }
+            .form_head{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 2px double;
+                padding-bottom: 20px;
+            }
+            .form_head .profile {
+                border: 1px solid;
+            }
+            .logo{
+                width: 100px;
+            }
+            .head_center{
+                text-align: center;
+            }
+            .head_center h1{
+                color: rgb(4, 112, 183);
+            }
+            .form_body{
+                margin: 20px 30px; 
+            }
+            input, option, select{
+                border: none;
+                background-color: transparent;
+                border-bottom: 1px dashed;
+                display: inline-block;
+                padding: 3px;
+                margin: 3px;
+                margin-bottom: 10px;
+                outline: none;
+            }
+            .fullWidth{
+                width: 495px; 
+            }
+            input:focus{
+                border: none;
+                background-color: transparent;
+                border-bottom: 1px dashed;
+                outline: none;
+            }
+            #dob {
+                width: 100px;
+                margin-right: 40px;
+            }
+            #male, #female{
+                width: 20px;
+            }
+            .address{
+                border: 1px dashed;
+                margin-top: 20px;
+                position: relative;
+                min-height:30px;
+                padding: 15px 15px;
+            }
+            .address p{
+                display: inline-flex;
+                background-color: #f1f1f1;
+                margin-top: -25px;
+                position: absolute;
+                margin-left: 20px;
+                padding: 0px 5px;
+                font-size: 13px;
+            }
+            
+            .content{
+                display: flex;
+            }
+            .content input{
+                width:200px;
+                margin-right: 20px;
+            }
+            .others{
+                width: 600px;
+                display: flex;
+                justify-content: space-between;
+                padding: 15px;
+                padding-bottom: 0px;
+            }
+            .others input, select{
+                width: 200px;
+            }
+            .form_footer{
+                margin: 35px;
+                margin-top: 30px;
+                border-top: 2px solid;
+                padding-top: 50px;
+            }
+            .sign{
+                display: flex;
+                justify-content: space-between;
+            }
+            .form_footer span{
+                height: 50px;
+                border-top: 1px dashed;
+                padding-top: 10px;
+                margin-top: 50px;
+            }
+        </style> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Admission form</h1>
+        <div class="wrapper">
+            <div class="margin">
+                <div class="form_head">
+                    <img src="Source/logo.png" alt="logo" class="logo">
+                    <div class="head_center">
+                        <h1>St.Joseph's College</h1>
+                        <h4>of arts and science (Cuddalore)</h4>
+                        <p>Re-Accredited by NAAC with "A" Grade</p>
+                    </div>
+                    <span class="logo profile"></span>
+                </div>
+                <div class="form_body">
+                    <div class="form_body_head">
+                        <div class="form_group">
+                            <label for="std_name">Student's Name:</label>
+                            <input type="text" id="std_name" class="fullWidth">
+                        </div>
+                        <div class="form_group">
+                            <label for="f_Name">Father's Name:</label>
+                            <input type="text" id="f_Name" class="fullWidth">
+                        </div>
+                        <div class="form_group">
+                            <label for="m_Name">Mother's Name:</label>
+                            <input type="text" id="m_Name" class="fullWidth">
+                        </div>
+                        <div class="form_group">
+                            <label for="dob">Birth date:</label>
+                            <input type="date" id="dob">
+                            Gender:
+			                <input type="radio" name="gender" value="Male" id="male"> 
+                            <label for="male">Male</label>
+	  		                <input type="radio" name="gender" value="Female" id="female"> 
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <p>Present Address</p>
+                        <div class="form_group">
+                            <label for="add">Address:</label>
+                            <input type="text" id="add" class="fullWidth">
+                        </div>
+                        <div class="content">
+                            <div class="form_group">
+                                <label for="city">City:&nbsp &nbsp &ensp;</label>
+                                <input type="text" id="city">
+                            </div>
+                            <div class="form_group">
+                                <label for="district">District:&ensp;</label>
+                                <input type="text" id="district">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="form_group">
+                                <label for="state">State:&nbsp &nbsp &ensp;</label>
+                                <input type="text" id="state">
+                            </div>
+                            <div class="form_group">
+                                <label for="pincode">Pincode:&ensp;</label>
+                                <input type="text" id="pincode">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="address">
+                        <p>Permanent Address</p>
+                        <div class="form_group">
+                            <label for="add_2">Address:</label>
+                            <input type="text" id="add_2" class="fullWidth">
+                        </div>
+                        <div class="content">
+                            <div class="form_group">
+                                <label for="city_2">City:&nbsp &nbsp &ensp;</label>
+                                <input type="text" id="city_2">
+                            </div>
+                            <div class="form_group">
+                                <label for="district_2">District:&ensp;</label>
+                                <input type="text" id="district_2" >
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="form_group">
+                                <label for="state_2">State:&nbsp &nbsp &ensp;</label>
+                                <input type="text" id="state_2">
+                            </div>
+                            <div class="form_group">
+                                <label for="pincode_2">Pincode:&ensp;</label>
+                                <input type="text" id="pincode_2">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="others">
+                        <div class="form_group">
+                            <label for="religion">Religion: &ensp;</label>
+                            <input type="text" id="religion">
+                        </div>
+                        <div class="form_group">
+                            <label for="nationality">Nationality:&ensp;</label>
+                            <input type="text" id="nationality">
+                        </div>
+                    </div>
+
+
+                    <div class="others">
+                        <div class="form_group">
+                            <label for="mobile">Mobile: &ensp;</label>
+                            <input type="text" id="mobile">
+                        </div>
+                        <div class="form_group">
+                            <label for="email">Email:&ensp;</label>
+                            <input type="text" id="email">
+                        </div>
+                    </div>
+
+
+                    <div class="others">
+                        <div class="form_group">
+                            <label for="blood">Blood Group: &ensp;</label>
+                            <input type="text" id="blood">
+                        </div>
+                        <div class="form_group">
+                            <label for="course">Course:&ensp;</label>
+                            <select name="course" id="course">
+                                <option value="" selected disabled>select</option>
+                                <option value="B.com">B.com</option>
+                                <option value="Bca">Bca</option>
+                                <option value="BBA">BBA</option>
+                                <option value="Bsc Maths">Bsc Maths</option>
+                                <option value="Bsc CS">Bsc CS</option>
+                                <option value="Bsc Micro Biology"> Bsc Micro Biology</option>
+                                <option value="Bsc Chemistry">Bsc Chemistry</option>
+                            </select>
+                        </div>
+                    </div>  
+                </div>
+                <div class="form_footer">
+                    <h4 style="text-align:center">DECLERATION</h4>
+                    <p>I hereby, declering that Culpa eaque in aspernatur exercitationem ex sint delectus hic, laudantium nostrum porro voluptatem dolores ab dignissimos, vel pariatur quos asperiores temporibus natus.</p>
+                    <input type="checkbox" id="t&c">
+                    <label for="t&c">  <a href="#">terms & conditions</a> </label>
+                    <div class="sign"><span>Student Signature</span> <span>Authorized Signature</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

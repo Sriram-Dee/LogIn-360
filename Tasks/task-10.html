@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background:linear-gradient(to top right, #ee008f, #ff92de);
+        }
+        .container{
+            width: 250px;
+            /* height: 400px; */
+            background: linear-gradient(to top right, #343030, #000000);;
+            color: white;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;     
+        }
+
+        .top   {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .pro{
+            float: left;
+            background-color: gold;
+            color: black;
+            padding: 1px 5px;
+            border-radius: 3px;
+        }
+
+        .img-holder{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 45px;
+            padding: 2px;
+            background:linear-gradient(to top right, #ee008f, #ff92de);
+            transition: .5s ease;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .top h3{
+            margin: 10px;
+            letter-spacing: 2px;
+        }
+
+        .top button{
+            width: 80px;
+            height: 20px;
+            border-radius: 5px;
+            transition: .3s ease;
+        }
+        .top button:nth-child(1){
+            background-color: #ee008f;
+            border: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        .top button:nth-child(2){
+            border: none;
+            color: #ee008f;
+            font-weight: 700;
+        }
+        button:hover,
+        .img-holder:hover{
+            scale: 1.035;
+           }
+        .bottom{
+            border-top: 1px solid white;
+            text-align: center;
+            padding-bottom: 5px;
+            margin: 3px;
+        }
+
+        .bottom h4{
+            color: gold;
+            letter-spacing: 1px;
+        }
+
+        .bottom button{
+            border: 1.5px solid #ee008f;
+            border-radius: 5px;
+            margin: 3px;
+            color: #ee008f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <span class="pro">PRO</span>
+            <div class="img-holder">
+                <img src="Source/itachi.jpeg" alt="Itachi Uchiha">
+            </div>
+            <h3>ITACHI UCHIHA</h3>
+            <h4>Leaf Village</h4>
+            <p>The most interesting and misunderstood character in anime.</p>
+            <div class="btn-wrap">
+                <button>Read more</button>
+                <button>Watch anime</button>
+            </div>
+        </div>
+        <div class="bottom">
+            <h4>Other characters</h4>
+            <button>Jiraiya</button>
+            <button>Kakashi</button>
+            <button>Might Guy</button>
+            <button>Tobi</button>
+            <button>Minato</button>
+            <button>Rock Lee</button>
+        </div>
+    </div>
+</body>
+</html>

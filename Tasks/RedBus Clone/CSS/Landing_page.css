@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cinzel+Decorative:wght@400;700;900&family=Lexend+Exa:wght@500;600;700&family=Sansita+Swashed:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+*{   margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lexend Exa', sans-serif;
+}
+
+:root{
+    --fontClr: rgb(68, 67, 67);
+    --red: #ff4d4d;
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+   
+}
+.top{
+    height: 60%;
+    width: 100%;
+    /* background:linear-gradient( to right, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.1)), url(coffee.jpg); */
+    background-size: cover; 
+       
+}
+ 
+nav {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    font-size: 1em;
+    font-weight: 100;
+    color: var(--fontClr);
+    background-color: #fff;
+    z-index: 999;
+}
+
+nav ul{
+    width: 800px;
+    text-align: center;
+}
+
+
+nav ul li  {
+    list-style: none;
+    display: inline-block;     
+    font-size: 1em;
+    font-weight: 100;
+    margin: 0px 20px;
+}
+
+nav ul li select{
+    background: transparent;
+    color: var(--fontClr);
+    font-size: 1em;
+    font-weight: 100;
+    border: none;
+    position: relative;
+}
+
+ option{
+    position: absolute;
+    margin-top: 20px;
+    display: inline-block;
+    line-height: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.content{
+    margin-top: 120px;
+    width: 100%;
+    height: 200px;
+    background: url(../redbus/top-bg.svg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content h1{
+    text-shadow: 2px 6px 5px rgba(255, 255, 255, 0.53);
+    text-align: center;
+}
+.content .choose{
+    text-align: center;
+    margin-top: 130px;
+    background-color: #fff;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgb(155, 155, 155);
+    position: relative;
+    display: flex;
+}
+.content .choose label{
+    display: inline-block;
+    width: 150px;
+    height: 70px;
+    text-align: left;
+    font-weight: 100px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid transparent;
+    
+}
+.content .choose label:hover{
+    background-color: rgba(0, 191, 255, 0.123);
+    border: 1px solid rgba(0, 191, 255, 0.319);
+}
+.content .choose p{
+    display: inline-block;
+    width: 100%;
+    line-height: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.content .choose input, .content .choose input:active{
+    width: 80%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-between;
+}
+.content .choose input::placeholder, input[type="date"]{
+    font-size: 1em;
+    color: gray;
+    user-select: none;
+}
+button.search{
+    display: inline-block;
+    width: 130px;
+    height: 100%;
+    background:#ff4d4d;
+    color: #fff;
+    top: 0px;
+    right: 0;
+    border: none;
+    position: absolute;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+button.search:hover{
+    background-color: #f75b5b;
+}
+
+.plus{
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.plus .card{
+    height: 260px;
+    width: 330px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    text-align: center;
+}
+.plus .card img{
+    object-fit: cover;
+    width: 300px;
+    margin: 20px;
+    height: 60%;
+}
+
+.airportTransfer{
+    height: 220PX;
+    background-color: rgba(201, 193, 184, 0.218);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 60px;
+    font-family: var(--font);
+}
+.airDetail{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: var(--font);
+}
+.airportTransfer button{
+    width: 300px;
+    border: 1px solid var(--fontClr);
+    outline: none;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+.airportTransfer p, .ads p{
+    font-weight: 400;
+    font-family: var(--font);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+.ads{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ads .card{
+    display: flex;
+    width:350px ;
+    gap: 20px;
+}
+
+.ads .adDetails{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    gap: 15px; 
+    height: 100px;
+}
+
+.routeCards{
+    display: flex; 
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 100px;
+}
+
+.routeCards .card{
+    width: 300px;
+    height: 300px;
+    text-align: left;
+
+}
+
+.routeCards .card .img{
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.routeCards .card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    transition: all .5s ease;
+}
+.img img:hover{
+    scale: 1.1;
+}
+.routeCards .card p{
+    margin-top: 30px;
+}
+
+.bottom{
+    display: flex;
+    height: 500px;
+    background-color: lightgray;
+    flex-wrap: wrap;
+}
+.left{
+    width: 300px;
+    margin-left:  150px ;
+    margin-top: 100px;
+    margin-right: 50px;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+.left a{
+    display: inline-block;
+    font-size: 3em;
+    transition: all .3s linear;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.left a:hover{
+    color: #ff4d4d;
+    scale: 1.05;
+}
+.bottom ul{
+    width: 100px;
+    margin: 100px 30px  ;
+    display: flex;
+    flex-direction: column;
+    justify-content:  baseline;
+    
+}
+
+.bottom ul li:hover{
+    color: #ff4d4d;
+}
+
+.bottom ul li{
+    list-style: none;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: rgb(67, 67, 67);
+}
+input,button,i,select{
+    cursor: pointer;
+}

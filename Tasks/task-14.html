@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Log-in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            background: url(Source/tcs_bg.png.crdownload);
+            background-position: bottom;
+            background-size: cover;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+        .card{
+            width: 300px;
+            height: 440px;
+            padding: 15px;
+            backdrop-filter: blur(12px);
+            border-radius: 15px;
+            text-align: center;
+            color: #111;
+            border: 3px solid #156ec7e3;
+            border-bottom: 25px solid #156ec7e3;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        .card .logo{
+            width: 100%;
+            height: 60%;
+            border-radius: 10px;
+            box-shadow: 4px 6px 3px 2px #14141463 , -0.5px -0.5px 2px 1px #14141463;
+        }
+
+        .content{
+            height: 40%;
+            margin-top: 15px;
+        }
+
+        h1,h3,p{
+            margin-top: 10px;
+        }
+        .social{
+            margin-top: 40px;
+            justify-content: center;
+            align-items:end;
+        }
+        .fa-brands{
+            margin: 10px 5px 5px;
+            font-size: 20px;
+            padding: 2px;
+            /* box-shadow: 2px 4px 2px 0px #3394f6f0 , -0.5px -0.5px 2px 1px #3394f6f0; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;        }
+       .fa-google-plus{
+        background-color: #f1f1f1;
+        border-radius: 50%;
+        color: orangered;
+        padding: 2;
+        font-size: 25px;
+       }
+
+       .fa-facebook{
+        background-color: #f1f1f1;
+        border-radius: 50%;
+        color:blue;
+        font-size: 25px;
+       }
+       .fa-youtube{
+        background-color: #f1f1f1;
+        border-radius: 50%;
+        color: red;
+        padding: 2;
+        font-size: 24px;
+       }
+
+       .fa-instagram{
+        background-color: deeppink;
+        border-radius: 30%;
+        color: #f1f1f1;
+        padding: 3px;
+       }
+
+       .fa-twitter{
+        color: #f1f1f1;
+        border-radius: 50%;
+        background-color:rgb(14, 109, 234);
+        padding: 3px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="Source/tcs_logo.png" alt="tcs logo" class="logo">
+            <div class="content">
+                <h1>We are Hiring...!</h1>
+                <h3>Let your talent be our superpower</h3>
+                <p style="font-weight: 600;">Your career-defining moment is here. Come work on the leading edge of tech business with us!</p>
+                <div class="social">
+                    <p><i>Be in touch to get quick updates</i></p>
+                    <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

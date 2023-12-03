@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<title>Form</title>
+		<style>
+			body{
+				width: 100vw;
+				height:100vh;
+				display: flex;
+				flex-direction:column;
+				justify-content: center;
+				align-items: center;
+			}
+			.form1{
+				display: flex;
+				flex-direction: column;
+				width: 350px;
+				height: 65vh;
+				justify-content: space-between;
+				text-align: center;
+				align-items: center;
+				border: 2px solid;
+			}
+			.form1 input{
+				height:35px;
+				width: 300px;
+			}
+
+			button{
+				width:7vw;
+				height: 5vh;
+				margin-bottom:20px;
+			}
+
+		</style>
+	</head>
+	<body >
+		<!-- Date: 26/09/2023 day 5 -->
+		<form class="form1">
+			<h1>Login</h1>
+			<input type="text" placeholder="User name or Email">
+			<input type="password" placeholder="password">
+			<button type="submit">Login</button>
+		</form>
+		<br>
+
+		<!-- Date: 27/09/2023 day 6 -->
+		<form class="form">
+			<select>
+				<option>Sriram</option>
+				<option>Jeeva</option>
+				<option>Devil</option>
+			</select><div>
+		Gender
+		<br>
+			<input type="radio" name="gender" value="Male" id="Male"> <label for="Male">Male</label>
+	 	<br>
+	  		<input type="radio" name="gender" value="Female" id="Female"> <label for="Female">Female</label>
+	  		<!--input radio= shows all options line by line -->
+		<br>
+	 </div>
+	 <div>
+		  <label>Known Language</label>
+		  <br>
+		 <input type="checkbox" name="Known Language[]" value="Tamil"> Tamil
+		 <input type="checkbox" name="Known Language[]" value=" English"> English
+		 <input type="checkbox" name="Known Language[]" value="Malayalam"> Malayalam
+		 <input type="checkbox" name="Known Language[]" value="Hindi"> Hindi
+		 <input type="checkbox" name="Known Language[]" value="Telugu"> Telugu
+		 <!--use [] for multi options -->
+	 </div>
+	 <br><br>
+	<div>
+		<label >Your Education</label><br>
+			<select name="Education" id="Education">
+				<option value="" selected disabled>select</option>
+				<option value="B.com">B.com</option>
+				<option value="M.com">M.com</option>
+				<option value="B.sc">B.sc</option>
+				<option value="SSLC">SSLC</option>
+				<option value="ITI">ITI</option>
+			</select>
+	</div><br>
+	 <div>
+		  <label for="position">You want to apply for the position of</label>
+		  <br>
+		  <select name="position" id="position">
+			  <option value="">select</option>
+			  <option value="Front end">Front end</option>
+			  <option value="Back end">Back end</option>
+			  <option value="Full stack">Full stack</option>
+			  <option value="Data science">Data science</option>
+		  </select>
+	</div><br>
+
+	  <div>
+	  <label for="Resume">Upload Resume</label><br>
+	  <input type="file" name="Resume" id="Resume"size="5">
+	  <!--use input type "file" for upload files(before that,
+		we have to use the attribute enctype="multipart/form-data" in the form tag)-->
+	 </div>
+
+	<label for="price">Price range</label>
+    <input type="range" name="price" id="price" min="100" max="1000" step="100">
+
+		</form>
+	</body>
+</html> 

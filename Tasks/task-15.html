@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi Landing page</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&family=MonteCarlo&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            scroll-snap-type: proximity;
+        }
+        body{
+            height: 200vh;
+
+        }
+        .container{
+            width: 100%px;
+            margin: auto;
+        }
+        nav{
+            position: absolute;
+            width: 100%;
+            height: 40px;
+            padding: 5px 10px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-top: 0px;
+            position: fixed;
+            background: #f1f1f1;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+            letter-spacing: 1px;
+            position: relative;
+        }
+		a::after{
+            position: absolute;
+			content: " ";
+			height:1.5px;
+            width: 0px;
+            bottom:1px;
+            left: -1px;
+            margin: auto;
+            transition: .2s ease;
+            border-radius: 5px;
+        }
+	    li:hover a::after{
+            width: 100%;
+            background: linear-gradient(to left, rgb(255, 0, 0), rgba(19, 19, 19, 0.778));
+
+				   
+		}
+        .hero{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            text-align: center;
+            background: linear-gradient(to top, rgba(11, 11, 11, 0.307), rgba(19, 19, 19, 0.778)),url(Source/audi-top.jpg);
+            background-position:bottom;
+            background-size: fill;
+            color: #f1f1f1;
+            padding: 30px;
+            justify-content: space-evenly;
+        }
+        .hero p{
+            min-width: 200px;
+            width: 700px;
+        }
+        .hero span, button{
+            display: inline-block;
+            margin-top: 20px;
+            border: 2px solid #ada9a9;
+            color: black;
+            background-color: #f1f1f1;
+            padding: 5px 10px; 
+            transition: all .5s ease;
+        }
+
+        .hero span:hover, button:hover{
+            background-color: #8d8d8d;
+            color: #f1f1f1;
+            border-radius: 2px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            background: url(Source/audi-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #f1f1f1;
+            overflow: hidden;
+        }
+
+        .card{
+            display: flex;
+            align-items: center;
+            width: 95%;
+            margin: 30px;
+            justify-content: flex-start;
+            padding: 0px;
+        }
+
+        .card:nth-child(odd){
+            border-left: 20px solid #8d8d8d;
+            border-radius:  20px ;
+            float: left;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.307), transparent, transparent);
+        }
+        
+        .card:nth-child(even){
+            justify-content: end;
+            border-right: 20px solid #8d8d8d;
+            border-radius:  20px ;
+            float: right;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0.349), transparent, transparent);
+
+        }
+
+        .card img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+    
+        .card:nth-child(odd) .right{
+            width: 400px;
+            margin-left: 100px;
+            text-align: left;
+        }
+        .card:nth-child(even) .right{
+            width: 400px;
+            margin-right: 100px;
+            text-align: right;
+        }
+
+        .connect{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            height: 500px;
+            margin: 30px;
+            justify-content: space-between;
+            padding: 0px;
+            align-self: center;
+            text-align: center;
+            border-radius: 20px;
+            overflow: hidden;
+            filter: drop-shadow(2px 2px 6px red);
+        }
+        .connect>h1{
+            text-align: center;
+            width: 90%;
+        }
+        .connect img{
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h2>Audi</h2>
+
+            <ul>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#">Used cars</a></li>
+                <li><a href="#inno">Innovation</a></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><a href="#">Get Started <i class="fa-solid fa-circle-chevron-right"></i></a></li>
+            </ul>
+        </nav>
+
+       <div class="hero">
+            <h1>A matter of character.</h1>
+            <p>With progressive design that suits your lifestyle.
+                Progress you can feel. The new, fully electric
+                Audi Q8 e-tron and Audi Q8 Sportback e-tron range.
+                Future is an attitude
+            </p>
+            <div class="btn">
+                <span>Explore Audi Q8 e-tron</span> <span>Explore Audi Q8 Sportback e-tron</span>
+            </div>
+       </div>
+       <h2 id="models" style="text-align: center;">Models</h1>
+       <div class="content">
+
+
+                <div class="card">
+                    <img src="Source/Audi.jpg" alt="">
+                    <div class="right">
+                        <h2>Audi Virtual Showroom</h2>
+                        <button>Explore More</button>
+                    </div>
+                </div>
+            
+
+            
+                <div class="card">
+                    <div class="right">
+                        <h2>Audi India registers robust growth of 88% in the first nine months of 2023</h2>
+                        <button>Explore More</button>
+                    </div>
+                    <img src="Source/audi1.png" alt="">
+                </div>
+           
+
+           
+                <div class="card">
+                    <img src="Source/audi2.jpeg" alt="">
+                    <div class="right">
+                        <h2>Audi India introduces 10-year Roadside Assistance</h2>
+                        <button>Explore More</button>
+                    </div>
+                </div>
+            
+
+            <div class="connect" id="inno">
+                <img src="Source/audi-connect.jpg" alt="">
+                <div class="right">
+                    <h2>Because you expect more from your Audi than just a drive from A to B. Download it now, to get more of your car on your phone.
+                        myAudi</h2>
+                    <button>My Audi-connect</button>
+                    <button>Audi Shop</button>
+                </div>
+            </div>
+       </div>
+    </div>
+</body>
+</html>
