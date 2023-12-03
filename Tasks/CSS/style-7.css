@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: grid;
+    place-items: center;
+    background: url(Source/task-7/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+}
+h1{
+    text-align: center;
+    margin: 20px 0px;
+    background-color: rgba(110, 110, 110, 0.76);
+    padding: 20px;
+    color: gold;
+}
+.main{
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   width: 100vw;
+   flex-wrap: wrap;
+   padding: 30px 20px 50px 30px;
+}
+
+.card{
+    width: 23%;
+    min-width: 220px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px 30px 3px 30px;
+    border: 1px solid aliceblue;
+    margin-bottom: 30px;
+    transition: all .3s ease;
+}
+
+.card:hover{
+    scale:1.15;
+    z-index: 99;
+    box-shadow: rgb(248, 248, 248) 0px 20px 30px -10px;
+    border: 1px solid black;
+}
+.card-body{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(240, 248, 255, 0.733);
+    justify-content: space-between;
+    padding: 2px 15px 20px 15px;
+    top: 220px;
+    height: 100%;
+    width: 100%;
+    transition: all .3s ease-out; 
+}
+.card-body:hover{
+    top: 0;
+    background: rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur(3px) ;
+    padding-top: 20px;
+}
+.img-box{
+    width: 100%;
+    height: 100%;
+    
+}
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;  
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    background-color: gold;
+    border: none;
+    padding: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+button:hover{
+    background-color: goldenrod;
+    border: 1px solid;
+}
+span,p {
+    font-weight: bold;
+}

@@ -1,0 +1,53 @@
+code{
+    font-size: 16px;
+}
+div{
+    width: 50vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color:lightgray;
+    padding: 20px 30px 0px 30px;
+    margin-bottom:20px ;
+    border-radius: 10px;
+}
+img{
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+div img{
+    margin-top: -25px;
+    align-self: center;
+}
+b{
+    font-size: 22px;
+}
+h3, li{
+    font-size: 22px;
+}
+a{
+    font-size: 12px;
+}
+table{
+    width: 80VW;
+    height: auto;
+    text-align: center;
+    background-color: tomato;
+    border: 3px ridge black ;
+    border-collapse: collapse;
+}
+th{
+background-color:white;
+color:tomato;
+font-size: 32px;
+padding: 2vh;
+}
+td{
+font-size: 18px;
+color: white;
+padding: 2vh;
+border: 2px ridge;
+}
+tfoot >tr> td {
+padding: 3vh ;
+}
