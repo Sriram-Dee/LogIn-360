@@ -29,9 +29,14 @@ header .navbar-brand{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    backdrop-filter: blur(35px);
+    backdrop-filter: blur(35px); 
+    text-align: center;
+}
+
+#hero .objective p{
     letter-spacing: 1px;
 }
+
 #hero .objective::after{
     content: '';
     width: 25rem;
@@ -69,6 +74,30 @@ header .navbar-brand{
 
 /* ----------------------------------About section ------------------------------- */
 
-#about img{
+#about .image-wrap{
     filter: drop-shadow(5px 3px 5px rgba(0,0,0,0.8));
+    overflow: hidden;
 }
+
+#about img{
+    object-position: center;
+    scale: 1.3;
+}
+
+/* @media screen and (max-width: 786px) {
+    #about .image-wrap{
+        height:50vh;
+        width: 50%;
+        padding: 0 !important;
+        display: grid;
+        margin: auto;
+        place-content: center;
+        position: relative;
+    }
+    #about img{
+        position: absolute;
+        top:40px;
+        margin: auto;
+        scale: 2;
+    }
+} */
