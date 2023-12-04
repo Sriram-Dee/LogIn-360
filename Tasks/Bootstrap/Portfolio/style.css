@@ -73,23 +73,23 @@ header .navbar-brand{
 }
 
 /* ----------------------------------About section ------------------------------- */
-
+#about .image-wrap{
+    overflow: hidden;
+}
+#about img{
+    scale: 1.5;
+}
 
 @media screen and (max-width: 786px) {
     #about .image-wrap{
         /* padding: 0 !important; */
         display: grid;
-        /* margin: auto; */
+        margin: auto;
         place-content: center;
         position: relative;
     }
     #about img{
-        /* position: absolute;
-        top:40px;
-        margin: auto;
-        scale: 2; */
         height: 60%;
-        object-fit: cover;
     }
 }
 
