@@ -108,6 +108,14 @@ header .navbar-brand:hover, li>a:hover{
     scale: 1.4;
 }
 
+#about .objective{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(35px); 
+    line-height: 30px;
+}
+
 @media screen and (max-width: 786px) {
     #about .image-wrap{
         /* padding: 0 !important; */
@@ -120,12 +128,10 @@ header .navbar-brand:hover, li>a:hover{
         height: 70%;
         margin-left:5% ;
     }
-}
 
-#about .objective{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    backdrop-filter: blur(35px); 
-    line-height: 20px;
+    #about .objective{
+        line-height: 1.2rem;
+        display: flex;
+        text-align: center;
+    }
 }
