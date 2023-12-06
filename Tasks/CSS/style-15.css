@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+}
+body{
+    height: 200vh;
+
+}
+.container{
+    width: 100%px;
+    margin: auto;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 0px;
+    position: fixed;
+    background: #f1f1f1;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 1px;
+    position: relative;
+}
+a::after{
+    position: absolute;
+    content: " ";
+    height:1.5px;
+    width: 0px;
+    bottom:1px;
+    left: -1px;
+    margin: auto;
+    transition: .2s ease;
+    border-radius: 5px;
+}
+li:hover a::after{
+    width: 100%;
+    background: linear-gradient(to left, rgb(255, 0, 0), rgba(19, 19, 19, 0.778));
+
+           
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    background: linear-gradient(to top, rgba(11, 11, 11, 0.307), rgba(19, 19, 19, 0.778)),url(Source/audi-top.jpg);
+    background-position:bottom;
+    background-size: fill;
+    color: #f1f1f1;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+.hero p{
+    min-width: 200px;
+    width: 700px;
+}
+.hero span, button{
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid #ada9a9;
+    color: black;
+    background-color: #f1f1f1;
+    padding: 5px 10px; 
+    transition: all .5s ease;
+}
+
+.hero span:hover, button:hover{
+    background-color: #8d8d8d;
+    color: #f1f1f1;
+    border-radius: 2px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    background: url(Source/audi-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #f1f1f1;
+    overflow: hidden;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: 30px;
+    justify-content: flex-start;
+    padding: 0px;
+}
+
+.card:nth-child(odd){
+    border-left: 20px solid #8d8d8d;
+    border-radius:  20px ;
+    float: left;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.307), transparent, transparent);
+}
+
+.card:nth-child(even){
+    justify-content: end;
+    border-right: 20px solid #8d8d8d;
+    border-radius:  20px ;
+    float: right;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.349), transparent, transparent);
+
+}
+
+.card img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card:nth-child(odd) .right{
+    width: 400px;
+    margin-left: 100px;
+    text-align: left;
+}
+.card:nth-child(even) .right{
+    width: 400px;
+    margin-right: 100px;
+    text-align: right;
+}
+
+.connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 500px;
+    margin: 30px;
+    justify-content: space-between;
+    padding: 0px;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    filter: drop-shadow(2px 2px 6px red);
+}
+.connect>h1{
+    text-align: center;
+    width: 90%;
+}
+.connect img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
