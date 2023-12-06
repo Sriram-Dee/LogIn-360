@@ -10,6 +10,18 @@
     -webkit-user-drag: none;
 }
 
+/*---------------------------- glow effect---------------------------------- */
+.btn-outline-primary, .glow{
+    box-shadow: inset 0 0 5px rgba(var(--bs-primary-rgb)),
+                0 0 10px rgba(var(--bs-primary-rgb)) ;
+}
+.glow:hover{
+    box-shadow: inset 0 0 20px rgba(var(--bs-primary-rgb)),
+                0 0 5px rgba(225,225,225,1),
+                0 0 10px rgba(var(--bs-primary-rgb)),
+                0 0 20px rgba(var(--bs-primary-rgb)),
+                0 0 25px rgba(var(--bs-primary-rgb));
+}
 /* -----------------------------Hearder/Navbar------------------------------------------ */
 
 header{
@@ -30,7 +42,14 @@ header .navbar-brand:hover, li>a:hover{
                 4px 4px 9px rgba(var(--bs-primary-rgb)),
                 -4px -4px 9px rgba(var(--bs-primary-rgb));
 }
-.navbar .cvDownload:hover{
+
+.navbar .cvDownload{
+    display:flex ;
+    align-items:center;
+    font-size: .75rem;
+    justify-content: space-around;
+}
+.navbar .cvDownload:hover, .btn-outline-primary:hover{
     background: transparent !important;
     box-shadow: inset 0 0 20px rgba(var(--bs-primary-rgb)),
                 0 0 5px rgba(225,225,225,1),
@@ -39,7 +58,7 @@ header .navbar-brand:hover, li>a:hover{
                 0 0 25px rgba(var(--bs-primary-rgb));
 }
 /*------------------------------------ hero section--------------------- */
-#hero{
+#hero,#skill{
     min-height: 100vh;
     overflow: hidden;
 }
@@ -68,6 +87,7 @@ header .navbar-brand:hover, li>a:hover{
     left: 60%;
     top: 10%;
     transform: rotate(25deg);
+    z-index: -1;
 }
 #hero .objective::before{
     content: '';
@@ -80,6 +100,7 @@ header .navbar-brand:hover, li>a:hover{
     position: absolute;
     right: 15%;
     transform: rotate(25deg);
+    z-index: -1;
 }
 #hero .image-wrap{
     max-height: 100vh;
@@ -101,6 +122,9 @@ header .navbar-brand:hover, li>a:hover{
                 -4px -4px 15px rgba(var(--bs-primary-rgb));
 }
 /* ----------------------------------About section ------------------------------- */
+#about{
+    position: relative;
+}
 #about .image-wrap{
     overflow: hidden;
 }
@@ -113,6 +137,7 @@ header .navbar-brand:hover, li>a:hover{
     flex-direction: column;
     justify-content: center;
     line-height: 30px;
+    z-index: 1;
 }
 
 @media screen and (max-width: 786px) {
@@ -136,50 +161,57 @@ header .navbar-brand:hover, li>a:hover{
 }
 
 #about .animated-bg{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     position: absolute;
-    width: 95%;
-    height: 95%;
 }
 
 #about .animated-bg::after{
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 25%;
+    min-width: 200px;
     aspect-ratio: 1;
     background-color: rgba(var(--bs-primary-rgb));
     border-radius: 20%;
     filter: blur(20px);
     opacity: 0.2;
-    animation: shift 20s linear infinite alternate;
-
+    animation: shift 10s linear infinite alternate;
+    z-index: 0;
 }
 
 #about .animated-bg::before{
     content: "";
     position: absolute;
-    top: 25%;
-    left: 15%;
     width: 15%;
+    min-width: 120px;
     aspect-ratio: 1;
     background-color: rgba(var(--bs-light-rgb));
     border-radius: 20%;
     filter: blur(20px);
     opacity: 0.2;
-    animation: shift 20s linear infinite alternate;
+    animation: shift 10s linear infinite alternate;
+    z-index: 0;
 }
 
 @keyframes shift{
-    0%,75%{
+    from{
         transform-origin:center;
-        transform:rotateY(0deg) translateX(0) translateY(0);
+        transform:rotateX(0deg) rotateY(0deg) skew(0);
         border-radius:50% ;
+        left: 10%;
+        top: 10%;
+        filter: hue-rotate(30deg) blur(10px);
     }
-    100%,25%{
+    to{
         transform-origin:center;
-        transform: rotateY(360deg) translateX(30vw) translateY(40vh);
-        border-radius:10% ;
+        transform: rotateX(360deg) rotateY(360deg) skew(30deg);
+        border-radius:10%;
+        left: 50%;
+        top: 60%;
+        filter: hue-rotate(0deg) blur(5px);
     }
 }
 
+/* -----------------------------------------------------Skill section------------------------------- */
