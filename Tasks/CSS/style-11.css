@@ -1,0 +1,23 @@
+
+body{
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    gap: 1.5%;
+    padding:10px;
+    scroll-behavior: smooth;
+}
+div{
+    width: 21%;
+    background-color: aqua;
+    padding: 15px;
+    border: 2px solid purple;
+    border-radius: 100px 10px 100px 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+h1{
+    text-align: center;
+    color: purple;
+     text-decoration: underline;
+    }
+
