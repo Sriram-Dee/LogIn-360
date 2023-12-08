@@ -47,7 +47,7 @@ header .navbar-brand:hover, li>a:hover{
     display:flex ;
     align-items:center;
     font-size: .75rem;
-    justify-content: space-around;
+    justify-content:center;
 }
 .navbar .cvDownload:hover, .btn-outline-primary:hover{
     background: transparent !important;
