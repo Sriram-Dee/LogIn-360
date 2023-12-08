@@ -140,25 +140,6 @@ header .navbar-brand:hover, li>a:hover{
     z-index: 1;
 }
 
-@media screen and (max-width: 786px) {
-    #about .image-wrap{
-        /* padding: 0 !important; */
-        display: grid;
-        margin: auto;
-        place-content: center;
-        position: relative;
-    }
-    #about img{
-        height: 70%;
-        margin-left:5% ;
-    }
-
-    #about .objective{
-        line-height: 1.2rem;
-        display: flex;
-        text-align: center;
-    }
-}
 
 #about .animated-bg{
     width: 100%;
@@ -215,3 +196,51 @@ header .navbar-brand:hover, li>a:hover{
 }
 
 /* -----------------------------------------------------Skill section------------------------------- */
+#skillLeft, #skillRight{
+    filter: drop-shadow(4px 4px 3px rgba(var(--bs-dark-rgb)));
+}
+#skillRight .progress-group{
+    background: conic-gradient( rgba(var(--bs-warning-rgb)) calc(3.6deg*var(--i)), rgba(var(--bs-light-rgb)) 0deg);
+    width: 100px;
+    aspect-ratio: 1;
+    position: relative;
+    box-shadow: 1px 1px 5px rgba(var(--bs-light-rgb)) , -1px -1px 5px rgba(var(--bs-light-rgb)) ;
+}
+#skillRight .progress-group .progress-text{
+    position: absolute;
+    inset: 7px;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset 1px 1px 5px rgba(var(--bs-light-rgb)), inset -1px -1px 5px rgba(var(--bs-light-rgb));
+}
+
+#skillRight .progress-group .progress-text h6,#skillRight .progress-group .progress-text h5{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 786px) {
+    #about .image-wrap{
+        /* padding: 0 !important; */
+        display: grid;
+        margin: auto;
+        place-content: center;
+        position: relative;
+    }
+    #about img{
+        height: 70%;
+        margin-left:5% ;
+    }
+
+    #about .objective{
+        line-height: 1.2rem;
+        display: flex;
+        text-align: center;
+    }
+
+    #skillRight .progress-group .progress-text h6,#skillRight .progress-group .progress-text h5{
+        font-size: .7rem;
+    }
+}
