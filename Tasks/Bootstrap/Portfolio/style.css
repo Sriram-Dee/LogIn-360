@@ -42,7 +42,14 @@ header .navbar-brand:hover, li>a:hover{
                 4px 4px 9px rgba(var(--bs-primary-rgb)),
                 -4px -4px 9px rgba(var(--bs-primary-rgb));
 }
+.active, #hero .objective p a:hover{
+    color: #ffffff !important;
+    text-shadow: 0px 0px 1.5px rgba(225,225,225,1), 
+                -0px -0px 1.5px rgba(225,225,225,1),
+                2px 2px 1px rgba(var(--bs-primary-rgb)),
+                -2px -2px 1px rgba(var(--bs-primary-rgb));
 
+}
 .navbar .cvDownload{
     display:flex ;
     align-items:center;
@@ -222,6 +229,10 @@ header .navbar-brand:hover, li>a:hover{
 }
 
 @media screen and (max-width: 786px) {
+    #hero .objective p, #about .objective p{
+        font-size: .8rem;
+        letter-spacing: .5px;
+    }
     #about .image-wrap{
         /* padding: 0 !important; */
         display: grid;
@@ -241,6 +252,6 @@ header .navbar-brand:hover, li>a:hover{
     }
 
     #skillRight .progress-group .progress-text h6,#skillRight .progress-group .progress-text h5{
-        font-size: .7rem;
+        font-size: .5rem;
     }
 }
