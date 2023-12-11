@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Intro & Basics</title>
+</head>
+<body>
+    <h1 id="sample"></h1>
+    <!-- 
+
+     -->
+    <script>
+        /* 
+        JavaScript variable is simply the name of a storage location.
+            There are two types of variables:
+                => Local variable (we can use it only within the function where we assigned that variable)
+
+                    function example {
+                        var x = 5; // local variable
+                    }
+
+                => global variable (we can use it where evere we want )
+
+        */
+            var apple = 100;  //Global variable
+                document.writeln("Today's apple rate is Rs: " + apple + "<br>" )
+                console.log("Today's apple rate is Rs: " + apple)
+
+       /* 
+        Rules while declaring variable
+            => Name must be start with letter.
+            => after letters we can use numbers (0-9).
+            => JS variables are case sensitive for examble x & X are different variable.
+       
+        */
+
+        var data = 200;
+
+        function a(){
+            document.writeln( "Calling a variable through function(a), Data = " + data + "<br>");
+            console.log( "Calling a variable through function(a), Data = " + data);
+            var pen = 10; // declaring local variable
+            document.write("Pen rate is " + pen + "<br>") 
+        }
+        function b(){
+            document.writeln( "Calling a variable through function(b), Data = " + data + "<br>");
+            console.log( "Calling a variable through function(b), Data = " + data );
+            // document.write("Pen rate is " + pen) // calling local varible on another function (won't work, throwing error) 
+
+        }
+
+        a();
+        b();
+    </script>
+</body>
+</html>
