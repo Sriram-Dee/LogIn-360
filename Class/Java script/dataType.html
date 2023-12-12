@@ -57,7 +57,51 @@
          */
 
 
-         // Difference
+         // Difference between let & const
+
+//          We can use let as both local and global variable, but var will always act as global variable, 
+//          even if we use it within the function we can access it from out of the function.
+
+            let s = 26;
+                console.log(s)
+            
+            function sample() {
+                // let s = "sri";
+                // let s = "ram";
+                // console.log(s)     //(error) we can't redeclare the variable which is used let keyword
+
+                var r = "Sri";
+                var r = "Deepi";
+
+                console.log(r)       // we can redeclare the variable which is used var keyword
+
+            }
+            sample();
+
+
+            //  global vs local
+
+            let globalVariable = "Global Variable"
+
+            function sample2() {
+                let local = "Local variable"
+                console.log(globalVariable)
+                console.log(local) // we can access the local variable only within this function 
+            }
+            sample2();
+            console.log(globalVariable); // We can access the global variable from anywhere
+            //console.log(local); //error, because we can't access the local variable from out of the function
+
+            var globalVar = "Global variable with key word var ";
+
+            function sample3() {
+                var localVar = "Local variable with key word var";
+                console.log(globalVar);
+                console.log(localVar);
+            }
+            sample3();
+            console.log(globalVar);
+            console.log(localVar); 
     </script>
 </body>
 </html>
