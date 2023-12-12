@@ -277,3 +277,32 @@ header .navbar-brand:hover, li>a:hover{
         height: 130px;
     }
 }
+/* ----------------------------------- Projects ---------------------------------- */
+
+#Projects .project-box{
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    background-color: red;
+    perspective: 300px;
+    backface-visibility: hidden;
+    height: 400px;
+    width: 450px;
+}
+#Projects .project-box .project-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#Projects .col:hover .project-box{
+    transform: perspective(1400px) rotateY(180deg);
+}
+#Projects .project-box .project-info{
+    transform-origin: top;
+    transform:rotateY(180deg) translateZ(50px);
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
