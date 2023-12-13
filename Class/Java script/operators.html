@@ -66,7 +66,36 @@
         let h = f**(++g);
         console.log(h) // 6 power 2 = 36
 
+//   @ Assignment operators (= += -= *= /= %= **=)
 
+/*
+        Operator	Example	    Same As
+        =	        x = y	    x = y
+        +=	        x += y	    x = x + y
+        -=	        x -= y	    x = x - y
+        *=	        x *= y	    x = x * y
+        /=	        x /= y	    x = x / y
+        %=	        x %= y	    x = x % y
+        **=	        x **= y 	x = x ** y
+*/
+
+        let i=h; // will assign the value of h in i
+        console.log(i); // Now h & i have same value(36)
+
+        let j=15;
+        console.log(j);
+        console.log(j+=h) // j = j+h => j=15+36 
+        // 1st it'll sum the value of j & h and assign the result value back on j 
+
+        console.log(b-=a); //b= b-a => 6-5=1 now the value b is 1
+        console.log(b) //1
+
+        console.log(b*=a); //b= b*a => 1*5=5 now the value of b is 5
+        console.log(b/=a); // b= b/a => 5/5=1 now the value of b is 1
+        console.log(a%=b); // a= a%b => 5/1=5 remainder is 0 now the value of a is 0
+
+        let k=5
+        console.log(k**=k); // 5*5*5*5*5=3125
     </script>
 </body>
 </html>
