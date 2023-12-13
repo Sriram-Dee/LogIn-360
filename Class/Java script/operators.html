@@ -13,14 +13,60 @@
         //  Symbols that instructs the compiler to perform a specific arithmetic or logical operation on operands.
 /* 
         There are different kind of operator, those are:
-            => Arithmetic operators ( + - * / %)
-            => Assignment operators (= += -= *= /= %=)
-            => Comparison operators or Relational operator ( > < <= >= == === != !==)
+            => Arithmetic operators ( + - * / % ** ++ --)
+            => Assignment operators (= += -= *= /= %= **=)
+            => Comparison operators or Relational operator ( > < <= >= == === != !== ?)
             => Logical operators ( ! || &&)
-            => Bitwise operators( & | ^ >> <<)
+            => Bitwise operators( & | ^ ~ >> << >>>)
+            => Type Operators( typeof instanceof)
+
 */
-//      Arithmetic Operators: ( + - * / %)
-        
+/*   @ Arithmetic Operators: ( + - * / % ** ++ --)
+        +	Addition
+        -	Subtraction
+        *	Multiplication
+        **	Exponentiation (ES2016)
+        /	Division
+        %	Modulus (Division Remainder)
+        ++	Increment
+        --	Decrement 
+    
+*/      
+        // Addition
+        let a=5, b=6, c=a+b;
+        console.log(c); // 5+6=11
+
+        // Subtraction
+        let d=b-a;
+        console.log(d)  // 6-5=1
+
+        // Multiplication
+        let e=a*b;
+        console.log(e); // 5*6=30
+
+        // Division
+        let f=e/a;
+        console.log(f); // 30/5=6
+
+        // Modulus (Will return Division's remainder)
+        let g=b%a;
+        console.log(g); // 6%5=1
+
+        // Increment
+        console.log(++g)//pre increment
+        console.log(g++)//post increment, it'll increase the value but reflect only on next call  
+        console.log(g)
+
+        // Decrement
+        console.log(--g)//pre Decrement
+        console.log(g--)//post Decrement, it'll increase the value but reflect only on next call  
+        console.log(g)
+
+        // Exponentiation ( power value)
+        let h = f**(++g);
+        console.log(h) // 6 power 2 = 36
+
+
     </script>
 </body>
 </html>
