@@ -95,19 +95,19 @@
     perspective: 300px;
 }
 #products .card{
-    min-height: 370px;
-    transition: all .5s ease;
-    transform-style: preserve-3d;
-    transform: perspective(1000px) rotateX(20deg) rotateY(15deg);
+    height: 370px;
+    /* transition: all .5s ease;
+    transform-style: preserve-3d; */
+    /* transform: perspective(1000px) rotateX(20deg) rotateY(15deg); */
 }
-#products .card:hover{
+/* #products .card:hover{
     scale: 1.06;
     transform: rotateY(0deg);
 }
 
 #products .card .card-text{
     transform:perspective(800px) translateZ(25px) ;  
-}
+} */
 #product .card .card-img-top{
     overflow: hidden;
 }
