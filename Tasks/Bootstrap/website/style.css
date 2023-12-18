@@ -95,7 +95,7 @@
     perspective: 300px;
 }
 #products .card{
-    height: 370px;
+    min-height: 370px;
     /* transition: all .5s ease;
     transform-style: preserve-3d; */
     /* transform: perspective(1000px) rotateX(20deg) rotateY(15deg); */
