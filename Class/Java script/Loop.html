@@ -55,7 +55,7 @@
             console.log("Sure, Buy it right now!")
          }
 
-//      Switch statement:
+//-----------------Switch statement:
 
 /*
          switch(expression){
@@ -66,35 +66,73 @@
                 //code block;
                 break;
          }
+
+         This is how it works:
+            => Switch statement to select on of many code block tobe excecuted.
+            => The switch expression is evaluated once.
+            => The value of the expression is compared with the values of each case.
+            => If there is a match, the associated block of code is executed.
+            => If there is no match, the default code block is executed.
+
+        The break Keyword
+           => When JavaScript reaches a break keyword, it breaks out of the switch block.
+           => This will stop the execution inside the switch block.
+           => It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.
+        
+        The default Keyword
+           =>The default keyword specifies the code to run if there is no case match:
 */
 
          let day;
 
-         switch ( day = 4){
+         switch (new Date().getDay()){ // new Date().getDay()  will get our local system's day and  returns the weekday as a number between 0 and 6. 
 
-            case 1:
+            case 0:
                 day="Sunday"
                 break;
-            case 2:
+            case 1:
                 day="Monday"
                 break;
-            case 3:
+            case 2:
                 day="Tuesday"
                 break;
-            case 4:
+            case 3:
                 day="Wednesday"
                 break;
-            case 5:
+            case 4:
                 day="Thursday"
                 break;
-            case 6:
+            case 5:
                 day="Friday"
                 break;
-            case 7:
+            case 6:
                 day="Saturday"
                 break;                
          }
-            console.log(day)
+            console.log("Today's day is " + day)
+
+        let time;
+
+        switch (time= 6){
+
+            case 5:
+                time= " Good Morning!"
+                break;
+            case 12: 
+                time="Good Afternoon!"
+                break;
+            case 4:
+                time="Good Evening"
+                break;
+            case 7:
+                time="Good Night!"
+                break;
+            default:
+                time = "Have a nice day!"
+                break
+        }
+            console.log(time)
+            console.log(new Date().getHours())
     </script>
 </body>
 </html>
