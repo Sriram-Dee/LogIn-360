@@ -7,11 +7,13 @@
     <style>
         body{
             height: 100vh;
-            background: url(https://media.licdn.com/dms/image/C5112AQE44-ky9VZjaQ/article-cover_image-shrink_600_2000/0/1559222605785?e=2147483647&v=beta&t=2sCkh6pEVyp6QdDo_X8_kY6JOCHyXhGzNaQbx0ZmWWU), radial-gradient(lightyellow, tomato);
+            background:linear-gradient(#4444448e, #111111a1), url(https://www.shutterstock.com/image-vector/letters-abstract-background-seamless-pattern-600nw-2175159663.jpg);
             background-repeat: no-repeat;
             background-position: center;
+            background-size: cover;
             display: grid;
             place-items: center;
+            color: #fff;
         }
 
         .container{
@@ -19,7 +21,7 @@
             height: 350px;
             padding: 10px;
             border-radius: 20px;
-            backdrop-filter:blur(5px);
+            backdrop-filter:blur(3px);
             background: #ffffff30;
             border: 1px solid #444;
             text-align: center;
@@ -27,7 +29,8 @@
             flex-direction: column;
             align-items: center;
             gap: 20px;
-            box-shadow: #444 3px 4px 10px;
+            box-shadow: #ffffff 0px 0px 15px 5px;
+            text-shadow: tomato 2px 2px 1px;
         }
 
         #txt{
@@ -50,11 +53,9 @@
         }
         .output{
             margin-top: 20px;
-            font-size: 1.2rem;
-        }
-        .output span{
-            font-size: 1.5rem;
-            font-weight: 700;
+            font-size: 2rem;
+            font-weight: 900;
+            color:;
         }
     </style>
 
@@ -70,9 +71,11 @@
 <script>
     function pick(){
         let txt = document.getElementById('txt').value
-        // let albha = txt[(Math.random()*txt.length+1).floor]
-        // document.getElementsByClassName("output").innerHTML=albha
-        console.log((Math.random()*txt.length).round)
+        let albha = txt[Math.floor((Math.random()*txt.length))].toUpperCase()
+        document.querySelector(".output").innerHTML=albha
+        // console.log(Math.floor((Math.random()*txt.length)))
+        // console.log(txt[Math.floor((Math.random()*txt.length))])
+        
     }
 </script>
 </body>
