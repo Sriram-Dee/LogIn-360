@@ -69,9 +69,9 @@
 </body>
     <script>
         function convert(){
-            let celsius = Number(document.getElementById("celsius").value).toFixed(2)
+            let celsius = Number(document.getElementById("celsius").value)
             const fromula = celsius*(9/5)+32;
-            document.querySelector(".output").innerHTML= fromula?`${Number(document.getElementById("celsius").value).toFixed(2)}°C = <span>${fromula}°F</span>`:"Enter the values in number"
+            document.querySelector(".output").innerHTML= fromula?`${celsius}°C = <span>${fromula}°F</span>`:"Enter the values in number"
         }   
     </script>
 </html>
