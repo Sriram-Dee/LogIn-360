@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Albhabet picker</title>
+    <style>
+        body{
+            height: 100vh;
+            background: url(https://media.licdn.com/dms/image/C5112AQE44-ky9VZjaQ/article-cover_image-shrink_600_2000/0/1559222605785?e=2147483647&v=beta&t=2sCkh6pEVyp6QdDo_X8_kY6JOCHyXhGzNaQbx0ZmWWU), radial-gradient(lightyellow, tomato);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: grid;
+            place-items: center;
+        }
+
+        .container{
+            width: 300px;
+            height: 350px;
+            padding: 10px;
+            border-radius: 20px;
+            backdrop-filter:blur(5px);
+            background: #ffffff30;
+            border: 1px solid #444;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            box-shadow: #444 3px 4px 10px;
+        }
+
+        #txt{
+            width: 60%;
+            height: 15px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #444b;
+            background: #ffffffb5;
+            border-radius: 3px;
+        }
+
+        button{
+            border: none;
+            background-color: tomato;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .output{
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+        .output span{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Random Albhabet picker</h2>
+        <input type="text" id="txt" placeholder="Enter Any word or sentence">
+        <button onclick="pick()">Convert</button>
+        <div class="output"></div>
+    </div>
+
+<script>
+    function pick(){
+        let txt = document.getElementById('txt').value
+        // let albha = txt[(Math.random()*txt.length+1).floor]
+        // document.getElementsByClassName("output").innerHTML=albha
+        console.log((Math.random()*txt.length).round)
+    }
+</script>
+</body>
+</html>
