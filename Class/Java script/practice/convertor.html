@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <h2>Temperature Convertor</h2>
+        <input type="text" id="celsius" placeholder="Enter the value in celsius">
+        <button onclick="convert()">Convert</button>
+        <div class="output"></div>
+    </div>
+</body>
+    <script>
+        function convert(){
+            let celsius = Number(document.getElementById("celsius").value).toFixed(2)
+            const fromula = celsius*(9/5)+32;
+            document.querySelector(".output").innerHTML= fromula?`${fromula}°F`:"Enter the values in number"
+        }   
+    </script>
+</html>
+<!-- Temperature in degrees Celsius (°C) * 9/5) + 32. -->
