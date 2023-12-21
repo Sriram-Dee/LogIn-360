@@ -35,6 +35,49 @@ for (i=2; i<=10; i+=2){
 for (i=7; i<=70; i+=7){
     console.log(i)
 }
+
+//--------------While loop
+console.log("while loop")
+/* let x = 1; //step-1: initialisation
+
+while(condition){ // step-2 condition
+    //statement step-3
+    // x++ or x--
+}
+*/
+//Example:
+
+let x=1;
+
+while(x<=5){
+    console.log(x);
+    x++
+}
+
+let j=1;
+
+while(j<=5){
+    document.writeln("*");
+        j++
+}
+
+// ----------- Nested loop
+document.write("<br> Nested loop <br> Box Pattern <br><br>")
+for(i=1; i<=5; i++){
+    for(j=1; j<=5; j++){
+        document.writeln("* &nbsp" );
+    }
+
+    document.write("<br>");
+}
+document.write("<br>Pattern <br><br>")
+for(i=1; i<=5; i++){
+    for(j=1; j<=i; j++){
+        document.writeln("* &nbsp" );
+    }
+
+    document.write("<br>");
+}
 </script>
 </body>
 </html>
