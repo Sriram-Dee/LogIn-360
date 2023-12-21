@@ -102,7 +102,37 @@ document.write("<br>Left inverted triangle Pattern <br><br>")
     }
 // By Rafi 
 }
+document.write("<br>Right side tringle <br><br>")
 
+{
+        for(let i=1;i<=5;i++){
+            for(let j=5; j>=i; j--){
+                document.writeln("&nbsp &nbsp")
+
+            }
+            for(let j=1;j<=i;j++){  
+                document.writeln("*&nbsp")
+            }
+
+        document.write("<br>");
+        }
+}
+
+document.write("<br> Inverted Right side tringle <br><br>")
+
+{
+        for(let i=1;i<=5;i++){
+            for(let j=1; j<=i; j++){
+                document.writeln("&nbsp &nbsp")
+
+            }
+            for(let j=5;j>=i;j--){  
+                document.writeln("*&nbsp")
+            }
+
+        document.write("<br>");
+        }
+}
 </script>
 </body>
 </html>
