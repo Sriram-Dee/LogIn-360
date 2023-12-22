@@ -36,11 +36,48 @@
 
     const names = ["Sriram", " Sanjay", " Sakthivel", " Naveeth", " Pradeep"]
     document.write(names);
-    document.write("<br>" + names.length)
-    document.write("<br>" + names[0])
-    document.write("<br>" + names[1])
-    document.write("<br>" + names[2])
+    document.write("<br>" + names.length);
+    document.write("<br>" + names[0]);
+    document.write("<br>" + names[1]);
+    document.write("<br>" + names[2]);
 
+    //------ Push
+    names.push(" Jeeva") // Push method is used to add the element in the last index of array
+    document.write("<br>" + names);
+
+    //----- POP
+    names.pop()// Pop method is used to delete the element in the last index of array
+    document.write("<br>" + names);
+    document.write("<br> <br>");
+
+    const fruits= ["Apple", "Orange", "Banana"];
+    document.write(fruits);
+
+    //----- Unshift
+    fruits.unshift("Mango") // Unshift method is used to add new element in 0th index of array
+    document.write("<br>" + fruits);
+
+    //------ Shift
+    fruits.shift() // Shift method is used to delete the 1st element of an array
+    document.write("<br>" + fruits);
+    
+    //------ Delete
+    delete fruits[1];
+    document.write("<br>" + fruits[1]);
+    // If we are using delete keyword that particular index will remain empty so it'll return undefined
+{
+    // Altering the element 
+    const names = ["Sriram", " Sanjay", " Sakthivel", " Naveeth", " Pradeep"]
+    document.write("<br>" + names);
+    names[0]="Jeeva"
+    document.write("<br>" + names);
+}   
+
+{
+    const names = ["Sriram", " Sanjay", " Sakthivel", " Naveeth", " Pradeep"]
+    names.splice(2,0," Sample1"," Sample 2")
+    document.write("<br>" + names);
+}
     </script>
 </body>
 </html>
