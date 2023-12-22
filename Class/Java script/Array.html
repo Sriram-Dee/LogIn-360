@@ -100,13 +100,18 @@
 
 }
 {
-    document.write("<h4>Accessing easch element by using loop</h4>")
+    document.write("<h4>Accessing each element by using loop</h4>")
 
     for(i=0; i<names.length; i++){
        let name=names[i]
        document.write(`Hi ${name} <br>`)
     }
     // document.write(names)
+
+    document.write("<h4>Accessing each element by using map and creating new array</h4>")
+
+    let name = names.map(x =>" Hi " + x)
+    document.write(name)
 }
     </script>
 </body>
