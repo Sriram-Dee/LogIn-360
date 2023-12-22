@@ -30,7 +30,7 @@
         => Array delete()
         => Array concat()
         => Array splice()
-        => Array
+        => Array revers
         => Array
     */
 
@@ -92,6 +92,21 @@
     document.write("<h4>Slice Method</h4>")
     document.write(names.slice(1,3)); 
     // It'll written the elements in index 1 to 3
+
+
+    document.write("<h4>Reverse Method</h4>")
+    names.reverse()
+    document.write(names); 
+
+}
+{
+    document.write("<h4>Accessing easch element by using loop</h4>")
+
+    for(i=0; i<names.length; i++){
+       let name=names[i]
+       document.write(`Hi ${name} <br>`)
+    }
+    // document.write(names)
 }
     </script>
 </body>
