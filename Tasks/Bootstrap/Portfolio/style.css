@@ -134,9 +134,11 @@ header .navbar-brand:hover, li>a:hover{
 }
 #about .image-wrap{
     overflow: hidden;
+    padding: 30px;
 }
 #about img{
     scale: 1.4;
+    /* width: 90%; */
 }
 
 #about .objective{
