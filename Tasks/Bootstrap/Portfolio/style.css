@@ -280,31 +280,53 @@ header .navbar-brand:hover, li>a:hover{
     }
 }
 /* ----------------------------------- Projects ---------------------------------- */
+#Projects{
+    min-height: 100vh;
+    color: #fff;
+}
 
+#Projects .row .col{
+    padding: 20px;
+}
+#Projects .project-wrap{
+ width: 100%;
+}
 #Projects .project-box{
     transform-style: preserve-3d;
-    transition: all 1s ease;
-    background-color: red;
+    transition: all 1s ease .3s;
     perspective: 300px;
     backface-visibility: hidden;
-    height: 400px;
-    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 #Projects .project-box .project-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-position: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
 }
-#Projects .col:hover .project-box{
+
+#Projects .project-box .project-img img{
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#Projects .col .project-wrap:hover .project-box, .project-box:hover .project-box, .project-info:hover .project-box{
     transform: perspective(1400px) rotateY(180deg);
+    backface-visibility: hidden;
 }
 #Projects .project-box .project-info{
     transform-origin: top;
     transform:rotateY(180deg) translateZ(50px);
-    background-color: blue;
+    /* background-color: blue; */
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
+    backface-visibility: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: mandatory;
 }
