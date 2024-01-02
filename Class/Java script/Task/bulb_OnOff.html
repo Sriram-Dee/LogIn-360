@@ -39,6 +39,7 @@
     <img src="./source/bulb_off.png" id="bulb" alt="bulb" onclick="onOff()">
     <button onclick="onOff()">Power</button>
     <!-- <p id="body">hgd</p> -->
+    
     <script>
         let bulb = document.getElementById('bulb')
         let bg= document.getElementById("body")
@@ -47,6 +48,7 @@
             bulb.style=(bulb.src.match("./source/bulb_off.png")) ? "filter:invert(9)" : "filter:invert(0)"
             bg.style = (bulb.src.match("./source/bulb_on.png")) ? "background-color: white;" : "background-color: black;";
         }
+
     </script>
 </body>
 
