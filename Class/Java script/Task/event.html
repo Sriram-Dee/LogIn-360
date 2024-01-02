@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb ON/OFF</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 1s ease;
+        background: black;
+        flex-direction: column;
+    }
+
+    #bulb{
+        width: 270px;
+        height: 350px;
+        filter: invert(9);
+        transition: all 1s ease-out;
+        cursor: pointer;
+    }
+
+    button{
+        aspect-ratio: 1;
+        border-radius: 50%;
+        color:#fff;
+        background-color: tomato;
+        margin-top: 40px;
+        box-shadow: 0px 20px 40px black;
+        cursor: pointer;
+    }
+</style>
+
+<body id="body">
+    <img src="./source/bulb_off.png" id="bulb" alt="bulb" onclick="onOff()">
+    <button onclick="onOff()">Power</button>
+    <!-- <p id="body">hgd</p> -->
+    <script>
+        let bulb = document.getElementById('bulb')
+        let bg= document.getElementById("body")
+        function onOff(){
+            bulb.src = (bulb.src.match("./source/bulb_off.png")) ? "./source/bulb_on.png" : "./source/bulb_off.png";
+            bulb.style=(bulb.src.match("./source/bulb_off.png")) ? "filter:invert(9)" : "filter:invert(0)"
+            bg.style = (bulb.src.match("./source/bulb_on.png")) ? "background-color: white;" : "background-color: black;";
+        }
+    </script>
+</body>
+
+</html>
