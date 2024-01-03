@@ -43,10 +43,12 @@
     <script>
         
         let n=1;
-        let counter = document.getElementById('count')
+        let counter = document.getElementById('count');
+
         function count(){
             counter.innerHTML=(n);
-            for(i=0; i<1; i++){
+            for(i=0; i<1; i++)
+            {
                 n=n>=5?5:n+1;
             }
         }

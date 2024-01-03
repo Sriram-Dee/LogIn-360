@@ -17,7 +17,7 @@
 
     <button onclick="count()">count</button>
     <span id="count" ></span>
-<br>
+<br><br>
 
     <!-- On change event -->
 
@@ -26,9 +26,17 @@
     <!-- On input event -->
     <input class="fName" type="text" oninput="upperCase(this)">
 
-    <br>
+<br><br>
     <!-- Mouse over event -->
-    <span id="para" onmouseover="mover(this)" onmouseout="(mout(this))">Mouse over me</span>
+    <span id="para" onmouseover="mover(this)" onmouseout="(mOut(this))">Mouse over me</span>
+<br>
+    <!-- Mouse down & Mouse down up event -->
+    <button onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: antiquewhite; border: none; margin: 20px; padding: 10px 20px;">
+    Click here</button>
+
+
+<!------------------------------------- Event Listener ----------------------------------------->
+
 
     <script>
         function displayDate() {
@@ -56,7 +64,7 @@
             x.style="color:red;"
         }
 
-        function mout(x){
+        function mOut(x){
             x.innerHTML="Mouse over me"
             x.style="color:default"
         }
@@ -65,6 +73,18 @@
             let btn =document.getElementById('btn')
             btn.innerHTML=btn.innerHTML=="Click me"?"Ooops":"Click me";
         }
+
+        // Mouse down & mouse up
+        function mDown(btn){
+                btn.style.backgroundColor="tomato"
+                btn.innerHTML="Release me"
+            }
+            function mUp(btn){
+                btn.style.backgroundColor="royalblue"
+                btn.innerHTML="Thank you"
+            }
     </script>
+
+    
 </body>
 </html>
