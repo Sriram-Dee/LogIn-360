@@ -17,12 +17,12 @@
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
+<body>
     <div class="container-fluid g-0">
         <!-- ------------------------------------------------------Header/Navbar ------------------------------------------>
         <header class="sticky-top " >
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
                 <div class="container-fluid">
                   <a class="navbar-brand text-primary fw-bold" href="#">SRIRAM R</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,7 @@
             </nav>
 
         </header>
-
+<div class="scrollSpy" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0" data-bs-offset="200">
         <!-- ---------------------------------------------------Hero section starts ----------------------------------------- -->
         <section id="hero" class="bg-dark">
             <div class="row px-md-5 py-md-0">
@@ -105,7 +105,7 @@
         </section>
         <!-- --------------------------------------------------- Skills ---------------------------- -->
 
-        <section id="skill" class="container-fluid bg-primary text-bg-dark text-center py-5 pt-md-5">
+        <section id="skill" class="container-fluid bg-secondary text-bg-dark text-center py-5 pt-md-2">
           <h1 class="p-4">Skills I have</h1>
           <div class="row px-4 py-md-0 row-cols-lg-2 row-cols-1 align-items-baseline">
            <!--      -------------------   Left BOX   ----------------  -->
@@ -196,7 +196,7 @@
               <div class="row row-cols-2 align-items-center d-flex justify-content-center gap-3 gap-md-4 px-md-5 ms-md-4">
                 <div class="col-5 d-flex flex-column align-items-center gap-1 gap-md-2 justify-content-start mt-md-4">
                   <div class="progress-group rounded-circle" style="--i:99;" >
-                    <div class="progress-text bg-primary">
+                    <div class="progress-text bg-light">
                       99%
                     </div>
                   </div>
@@ -206,7 +206,7 @@
 
                 <div class="col-5 d-flex flex-column align-items-center gap-1 gap-md-2 justify-content-start mt-md-4">
                   <div class="progress-group rounded-circle" style="--i:30;"  >
-                    <div class="progress-text bg-primary">
+                    <div class="progress-text bg-light">
                       30%
                     </div>
                   </div>
@@ -216,7 +216,7 @@
 
                 <div class="col-5 d-flex flex-column align-items-center gap-1 gap-md-2 justify-content-start mt-md-4">
                   <div class="progress-group rounded-circle" style="--i:60;" >
-                    <div class="progress-text bg-primary">
+                    <div class="progress-text bg-light">
                       60%
                     </div>
                   </div>
@@ -225,7 +225,7 @@
 
                 <div class="col-5 d-flex flex-column align-items-center gap-1 gap-md-2 justify-content-start mt-md-4">
                   <div class="progress-group rounded-circle" style="--i:90;" >
-                    <div class="progress-text bg-primary ">90%</div>
+                    <div class="progress-text bg-light ">90%</div>
                   </div>
                   <h6> Skill 4</h6>
                 </div>
@@ -235,10 +235,10 @@
         </section>
 
         <!--------------------------------- Project Section ------------------------------>
-        <section id="Projects" class="container-fluid g-0 bg-dark pt-5">
-          <h1 class=" pt-5 display-5 fw-semibold text-center">Projects</h1>
+        <section id="Projects" class="container-fluid g-0 bg-dark pt-2">
+          <h1 class=" pt-3 pb-5 display-5 fw-semibold text-center">Projects</h1>
 
-          <div class="row gx-0 ">
+          <div class="row gx-0 px-5 px-md-0">
 
             <div class="col col-12 col-md-4">
               <div class="project-wrap">
@@ -355,6 +355,39 @@
             </div>
           </div>
         </section>
+
+        <!------------------------------------ Contact Section -------------------------------->
+
+        <section id="contact"class="container-fluid g-0 bg-dark pt- 2row">
+          <h1 class=" pt-2 display-5 fw-semibold text-center">Contact Me</h1>
+          <div class="card col-md-5 mx-auto text-bg-dark my-md-4 px-5">
+    
+            <h2 class="head" title="message">Send a message</h2>
+        
+            <div class="form-group">
+                <label for="coName">Company Name</label>
+                <input type="text" title="Type your Name" id="coName" class="rounded-3">
+            </div>
+        
+            <div class="form-group">
+                <label for="position">Position</label>
+                <input type="text" title="Type your password" id="position" class="rounded-3">
+            </div>
+        
+            <div class="form-group more">
+        
+                <label for="more" title="enter a message"> Enter a message</label>
+                <textarea name="" id="" cols="20" rows="3" class="rounded-3" style="resize: none;"></textarea>
+            </div>
+        
+            <button class="btn btn-primary mx-auto my-3 px-5"><i class="bi-telegram pe-2"></i> Send</button>
+        </div>
+          
+        </section>
+
+  </div>
+  
+  <a href="#hero" class="bg-primary d-block text-bg-dark px-5 py-2"><i class="bi bi-arrow-up fw-bold fs-4 p-2"></i>Back to top</a>
     </div>
 
 

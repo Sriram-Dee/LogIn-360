@@ -211,22 +211,24 @@ header .navbar-brand:hover, li>a:hover{
     filter: drop-shadow(4px 4px 3px rgba(var(--bs-dark-rgb)));
 }
 #skillRight .progress-group{
-    background: conic-gradient( rgba(var(--bs-warning-rgb)) calc(3.6deg*var(--i)), rgba(var(--bs-light-rgb)) 0deg);
+    background: conic-gradient( rgba(var(--bs-primary-rgb)) calc(3.6deg*var(--i)), rgba(var(--bs-secondary-rgb)) 0deg);
     width: 100px;
     aspect-ratio: 1;
     position: relative;
-    box-shadow: 1px 1px 5px rgba(var(--bs-light-rgb)) , -1px -1px 5px rgba(var(--bs-light-rgb)) ;
+    box-shadow: 1px 1px 10px 1px rgba(var(--bs-light-rgb)) , -1px -1px 10px rgba(var(--bs-light-rgb)) ;
 }
 #skillRight .progress-group .progress-text{
     position: absolute;
-    inset: 7px;
+    inset: 12px;
+    font-weight: 600;
     border-radius: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: rgba(var(--bs-primary-rgb));
     /* box-shadow: inset 1px 1px 5px rgba(var(--bs-light-rgb)), inset -1px -1px 5px rgba(var(--bs-light-rgb)); */
-    box-shadow: inset 1px 1px 5px rgba(var(--bs-light-rgb)), inset -3px -3px 10px rgba(var(--bs-dark-rgb));
+    box-shadow: inset 1px 1px 5px rgba(var(--bs-light-rgb)), inset -3px -3px 10px rgba(var(--bs-dark-rgb)),0px 0px 5px 3px rgba(var(--bs-dark-rgb));
 }
 
 #skillRight .progress-group .progress-text h6,#skillRight .progress-group .progress-text h5{
@@ -363,4 +365,26 @@ display: none;
 body::-webkit-scrollbar-thumb{
     background: linear-gradient(transparent,rgb(65, 105, 225)) ;
     border-radius: 10px;
+}
+
+/* --------------------------------- contact page -----------------------*/
+
+#contact{
+    min-height: 100vh;
+    color: #fff;
+}
+
+#contact .form-group{
+    display: flex;
+    flex-direction: column;
+    padding:5px 20px ;
+}
+
+#contact .form-group input, textarea {
+    margin: 10px auto;
+    padding: 5px 20px;
+    max-width: 350px;
+    min-width: 80%;
+    border: none;
+    outline: none;
 }
