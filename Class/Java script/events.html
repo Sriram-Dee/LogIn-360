@@ -33,12 +33,8 @@
     <!-- Mouse down & Mouse down up event -->
     <button onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: antiquewhite; border: none; margin: 20px; padding: 10px 20px;">
     Click here</button>
-
-
-<!------------------------------------- Event Listener ----------------------------------------->
-
-
-    <script>
+<br><br>
+<script>
         function displayDate() {
             document.getElementById('date').innerHTML=new Date()
         }
@@ -83,8 +79,20 @@
                 btn.style.backgroundColor="royalblue"
                 btn.innerHTML="Thank you"
             }
-    </script>
+</script>
 
-    
+
+<!------------------------------------- Event Listener ----------------------------------------->
+    <h1>Adding Event listener</h1>
+<br>
+    <p id="disDate"></p>    
+    <button id="dateBtn">Get Date & time</button>
+<script>
+    document.getElementById('dateBtn').addEventListener('click', disDate)
+
+    function disDate(){
+        document.getElementById('disDate').innerHTML=Date()
+    }
+</script>
 </body>
 </html>
