@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function types</title>
+</head>
+<body>
+    
+    <script>
+        // Named function:
+
+        function fun1(n1,n2){
+            let sum = n1+n2;
+            return sum;
+        }
+        document.write("Sum of 5,7 = " + fun1(5,7))
+
+        // Anonymous function
+
+        let fun2 = function(n1,n2){
+            let sub = n1-n2;
+            return sub;
+        }
+
+        document.write("Subtrction of 15,3 = " + fun2(15,3))
+
+        // Immediately invocked function expression(IIFE):
+
+            //It is used for security purpose
+            // We can't reuse this function
+            //  IEFE immediately call the function
+
+
+        // Arrow function:
+
+            // A function which is creating without a fuction key word, function name & return values is known as arrow function
+
+        let arFn =(n1,n2)=>{return n1+n2};
+
+        document.write(arFn(5,5));
+
+
+    </script>
+</body>
+</html>

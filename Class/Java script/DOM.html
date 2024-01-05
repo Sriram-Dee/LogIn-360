@@ -9,13 +9,21 @@
     <h2>What JavaScript can do?</h2>
     <h1 id="demo"></h1> <!--A space between open and closing tag is known as innerHTML -->
     <p class="para"></p>
-    <h1><span>Span-0</span></h1>
+    <h4><span>Span-0</span></h4>
     <span>Span-1</span>
     <span>Span-2</span>
+
+    <div class="qSelect">qSelect-1</div>
+    <div class="qSelect">qSelect-2</div>
+    <div class="qSelect">qSelect-3</div>
     <script>
         document.getElementById('demo').innerHTML ='Hello World!';
         document.getElementsByClassName('para')[0].innerHTML =  'This is a para injected by JS';
         document.getElementsByTagName('span')[0].innerHTML =  'By Tag name';
+
+        document.querySelector(".qSelect").style.backgroundColor="Aqua" // querySelector always access the first child
+
+        let vc= new Scratc
     </script>
 </body>
 </html>
