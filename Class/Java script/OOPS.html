@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS</title>
+</head>
+<body>
+    
+    <!-- Note: Another names
+        Instance <=> Object 
+        Golbal Var <=> field
+    -->
+<!-- 
+    Object:
+
+        * Real time entity
+        * 
+-->
+
+<!-- 
+    Class:
+     
+     class className {
+        className objName = new constructor();
+     }
+
+     class Bike {
+        constructor(){
+            Bike ktm = new Bike();  // When creating a obj constructor should be automatically call
+        }
+     } 
+
+-->
+
+<script>
+    class Car{
+        constructor(name, year){
+            this.name = name;
+            this.year = year;
+        }
+    }
+    const myCar1 = new Car("Kia", 2020);
+    const myCar2 = new Car("Mersidies", 2016)
+
+    document.write('My Car 1 = '+myCar1.name +" has launched on the year of " + myCar1.year);
+</script>
+
+<!-- 
+    Inheritance:        // Inherit = extends = invoked all are same
+
+    *   Single Inheritance => 1Parent, 1 Child
+    *   Multi leve Inheritance => 1 Grand parent, 1Parent, 1 Child
+    *   Hierarical => 1 Parent, 2 or more child
+
+    => Parent class is called Super class, Child class is called Sub class. 
+ -->
+</body>
+</html>
