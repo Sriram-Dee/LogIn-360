@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    gap: 40px;
+    background: #f5f5f5; /* Light gray background */
+}
+
+h1 {
+    background: linear-gradient(to top right, #3498db, #e74c3c);
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: min(400px, 80%);
+    max-width: 600px;
+    margin: 0 auto;
+    height: min(300px, 60vh);
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top right, #3498db, #e74c3c);
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.input-group {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #95a5a6;
+}
+
+#add {
+    background-color: #3498db;
+    border: none;
+    width: 20%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#toDos {
+    padding: 20px;
+}
+
+.parah {
+    padding: 5px;
+    border-bottom: 1px solid #ecf0f1;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: .3s ease;
+    border-radius: 3px;
+}
+
+.parah .fa {
+    font-size: 18px;
+    margin: 0px 10px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.parah .fa-trash {
+    background-color: #e74c3c;
+    color: #fff;
+    float: right;
+}
+
+.parah .fa-check {
+    background-color: #2ecc71;
+    color: #fff;
+    float: left;
+}
+
+.parah:hover {
+    background-color: #ecf0f1;
+}
+
+    </style>
+</head> 
+<body>
+    <h1>Your todo list</h1>
+    <div class="container">
+        <div class="input-group">        
+            <input type="text" id="inputField" placeholder="What's on your mind?"><button id="add">Add</button>
+        </div>
+        <div id="toDos">
+        </div>
+    </div>
+    <script>
+        const input = document.getElementById('inputField');
+const add = document.getElementById('add');
+const toDos = document.getElementById('toDos');
+
+add.addEventListener('click', () => {
+
+    if(input.value)
+    {
+        let toDo = document.createElement('p');
+    toDo.classList.add('parah');
+    toDo.innerText = input.value;
+    toDos.appendChild(toDo);
+
+    input.value = "";
+
+    const deleteIcon = document.createElement('i');
+    deleteIcon.classList.add('fa', 'fa-trash');
+    toDo.appendChild(deleteIcon);
+
+    deleteIcon.addEventListener('click', () => {
+        toDos.removeChild(toDo);
+        });
+
+    toDo.addEventListener('click', () => {
+        if (!toDo.querySelector('.fa-check')) {
+            const checkIcon = document.createElement('i');
+            checkIcon.classList.add('fa', 'fa-check');
+            toDo.appendChild(checkIcon);
+            toDo.style.textDecoration = "line-through";
+        }
+        });
+    }
+});
+    
+    </script>
+</body>
+</html>
