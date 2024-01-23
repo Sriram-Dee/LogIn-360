@@ -9,7 +9,7 @@
     
 
     <script>
-
+/*{
         // Call back function is known as giving a function as a parameter for another function  
     
     // Example 1
@@ -36,7 +36,7 @@
         }
 
         showAlert(enterName);
-
+}*/
     // Time Out function ( We are using this function to set time delay for particular function)
 
         function delayedFunction(){
@@ -44,10 +44,18 @@
 
         }
 
-        setTimeout(delayedFunction, 3000);
+        setTimeout(delayedFunction, 1000);
 
         document.write('<br>Wait, You have a surprise...')
 
+
+        // Time out with parameters
+
+        function greet(fName, lName){
+            console.log('Hello '+ fName + " " + lName);
+        }
+
+        setTimeout(greet, 1000, "Sanjay", "Kumar");
     </script>
 </body>
 </html>
