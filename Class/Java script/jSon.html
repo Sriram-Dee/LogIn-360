@@ -7,5 +7,41 @@
 </head>
 <body>
     
+
+    <script>
+        // JSON 
+
+    /*
+        JSON => JavaScript Obeject Notation
+             => It is a text based data formate that is used to store and transfer data.
+             => In JSon, datas are in Key/Value pair
+             => It generates and store the data from user input
+             => It can transport the data from client to server, server to client, server to server.
+             => It can also build and verify the data 
+
+        JSON Methods;
+            => JSON parse() => ( This method takes a JSON string and transforms into a JavaScript object)
+            => JSON stringify() => (This method converts a JavaScript value into a JSON representation)
+    */    
+
+        // JSON format data
+        const jSonData = '{"name":"Sriram", "age": 24 , "email": "sriram14jeeva12@gmail.com"}'
+
+        // Converting JSON data into JS obj
+        const myObj = JSON.parse(jSonData);
+
+        // Accessing the data from Object
+        console.log("Name: " + myObj.name, ", Age: " + myObj.age, ", Email: " + myObj.email);
+
+
+        // Object Format
+        const objData= {'name': 'Sanjai', 'age': 24, 'city':'Cuddalore'};
+
+        // Converting Object into JSON
+        const conJsonData= JSON.stringify(objData)
+
+        // Accessing JSON 
+        console.log(conJsonData);
+    </script>
 </body>
-</html>
+</html> 
